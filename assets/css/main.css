@@ -1,0 +1,209 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.main-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.heading {
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.heading.black {
+  color: #040100;
+}
+.heading.primary {
+  color: #ECC4B3;
+}
+.heading.white {
+  color: #ffffff;
+}
+
+.para {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 350;
+}
+.para.black {
+  color: #040100;
+}
+.para.primary {
+  color: #ECC4B3;
+}
+.para.white {
+  color: #ffffff;
+}
+
+.btn-amber {
+  padding: 12px 44px;
+  border-radius: 30px 0 30px 0;
+  border: 2px solid #C07841;
+  font-size: 16px;
+  font-weight: 500;
+  color: #C07841;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(253, 244, 220, 0.5), rgba(253, 244, 220, 0.5));
+  display: inline-block;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-amber:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 27px 0 27px 0;
+  z-index: -2;
+}
+.btn-amber:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #C07841;
+  transition: all 0.3s;
+  border-radius: 27px 0 27px 0;
+  z-index: -1;
+}
+.btn-amber:hover {
+  color: #FEFAEE;
+}
+.btn-amber:hover:before {
+  width: 100%;
+}
+.btn-amber:hover svg path {
+  fill: #FEFAEE;
+}
+.btn-amber.btn-back svg {
+  margin-right: 7px;
+}
+
+.banner {
+  display: flex;
+  background-image: url(/assets/images/banner.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120vh;
+}
+.banner .left {
+  width: 20%;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(253, 244, 220, 0.5), rgba(253, 244, 220, 0.5));
+  transition: width 0.5s ease;
+}
+.banner .middle {
+  width: 60%;
+  transition: width 0.5s ease;
+  position: relative;
+}
+.banner .middle .logo {
+  text-align: center;
+}
+.banner .middle .logo img {
+  width: 500px;
+  transition: width 0.5s ease;
+}
+.banner .middle .content {
+  text-align: center;
+  padding-top: 26vh;
+}
+.banner .middle .discover {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translate(-50%);
+}
+.banner .middle .discover a {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+  color: #FEFAEE;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.banner .middle .discover img {
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  transition: width 0.5s ease;
+}
+.banner .middle .discover:hover img {
+  width: 35px;
+  transition: width 0.5s ease;
+}
+.banner .right {
+  width: 20%;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, rgba(253, 244, 220, 0.5), rgba(253, 244, 220, 0.5));
+  transition: width 0.5s ease;
+}
+.banner .right .btn-back {
+  margin: 30px;
+}
+.banner .right ul li {
+  list-style-type: none;
+}
+.banner .right ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 40px;
+  color: #040100;
+}
+.banner .right .discover-more {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.banner .humbergure {
+  display: none;
+}
+.banner.full-banner .left, .banner.full-banner .right {
+  width: 0;
+}
+.banner.full-banner .left .btn-back, .banner.full-banner .right .btn-back {
+  display: none;
+}
+.banner.full-banner .left .humbergure, .banner.full-banner .right .humbergure {
+  display: block;
+  position: absolute;
+  right: 10%;
+  top: 15px;
+  cursor: pointer;
+}
+.banner.full-banner .middle {
+  width: 100%;
+}
+.banner.full-banner .middle .logo img {
+  width: 230px;
+}
+.banner.full-banner .middle .content {
+  padding-top: 33vh;
+}
+
+.project {
+  display: flex;
+  background-image: url(/assets/images/amber-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120vh;
+}/*# sourceMappingURL=main.css.map */

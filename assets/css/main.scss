@@ -1,0 +1,268 @@
+// Colors
+$primary: #ECC4B3;
+$primaryLight: #FEFAEE;
+$secondary: #040100;
+$white: #ffffff;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.main-wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    &.black {
+        color: $secondary;
+    }
+
+    &.primary {
+        color: $primary;
+    }
+
+    &.white {
+        color: $white;
+    }
+}
+
+.para {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 350;
+
+    &.black {
+        color: $secondary;
+    }
+
+    &.primary {
+        color: $primary;
+    }
+
+    &.white {
+        color: $white;
+    }
+}
+
+// Button
+.btn-amber {
+    padding: 12px 44px;
+    border-radius: 30px 0 30px 0;
+    border: 2px solid #C07841;
+    font-size: 16px;
+    font-weight: 500;
+    color: #C07841;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+        linear-gradient(0deg, rgba(253, 244, 220, 0.5), rgba(253, 244, 220, 0.5));
+    display: inline-block;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 27px 0 27px 0;
+        z-index: -2;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #C07841;
+        transition: all .3s;
+        border-radius: 27px 0 27px 0;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: #FEFAEE;
+
+        &:before {
+            width: 100%;
+        }
+
+        svg {
+            path {
+                fill: $primaryLight;
+            }
+        }
+    }
+
+    &.btn-back {
+        svg {
+            margin-right: 7px;
+        }
+    }
+}
+
+
+// Start banner section
+.banner {
+    display: flex;
+    background-image: url(/assets/images/banner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+
+    .left {
+        width: 20%;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+            linear-gradient(0deg, rgba(253, 244, 220, 0.5), rgba(253, 244, 220, 0.5));
+        transition: width 0.5s ease;
+
+    }
+
+    .middle {
+        width: 60%;
+        transition: width 0.5s ease;
+        position: relative;
+
+        .logo {
+            text-align: center;
+
+            img {
+                width: 500px;
+                transition: width 0.5s ease;
+            }
+        }
+
+        .content {
+            text-align: center;
+            padding-top: 26vh;
+        }
+
+        .discover {
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            transform: translate(-50%);
+
+            a {
+                display: block;
+                text-decoration: none;
+                font-size: 18px;
+                line-height: 20px;
+                color: $primaryLight;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 30px;
+                transition: width 0.5s ease;
+            }
+
+            &:hover {
+                img {
+                    width: 35px;
+                    transition: width 0.5s ease;
+                }
+            }
+        }
+    }
+
+    .right {
+        width: 20%;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+            linear-gradient(0deg, rgba(253, 244, 220, 0.5), rgba(253, 244, 220, 0.5));
+        transition: width 0.5s ease;
+
+        .btn-back {
+            margin: 30px;
+        }
+
+        ul {
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 40px;
+                    color: $secondary;
+                }
+            }
+        }
+
+        .discover-more {
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+
+    }
+
+    .humbergure {
+        display: none;
+    }
+
+    &.full-banner .left,
+    &.full-banner .right {
+        width: 0;
+
+        .btn-back {
+            display: none;
+        }
+
+        .humbergure {
+            display: block;
+            position: absolute;
+            right: 10%;
+            top: 15px;
+            cursor: pointer;
+        }
+    }
+
+    &.full-banner .middle {
+        width: 100%;
+
+        .logo {
+            img {
+                width: 230px;
+            }
+        }
+
+        .content {
+            padding-top: 33vh;
+        }
+    }
+}
+
+// Start Project section
+.project {
+    display: flex;
+    background-image: url(/assets/images/amber-bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+}
