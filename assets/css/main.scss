@@ -23,9 +23,19 @@ body {
     overflow: hidden;
 }
 
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
 .heading {
     font-size: 32px;
-    line-height: 44px;
+    line-height: 38px;
     letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 400;
@@ -45,8 +55,9 @@ body {
 
 .para {
     font-size: 18px;
-    line-height: 36px;
+    line-height: 32px;
     font-weight: 350;
+    margin-bottom: 0;
 
     &.black {
         color: $secondary;
@@ -59,6 +70,15 @@ body {
     &.white {
         color: $white;
     }
+}
+
+p.label {
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #C07841;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
 }
 
 // Button
@@ -157,6 +177,11 @@ body {
         .content {
             text-align: center;
             padding-top: 26vh;
+
+            .para {
+                padding-top: 10px;
+                padding-bottom: 20px;
+            }
         }
 
         .discover {
@@ -264,5 +289,300 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+
+    .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .frame {
+        // border: 1px solid $primary;
+        // max-width: 384px;
+        // padding: 40px 58px;
+        // margin: 30px auto 0 0;
+        // position: relative;
+        background-image: url(/assets/images/frame.png);
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 270px;
+        margin-top: 30px;
+
+        .left {
+            position: absolute;
+            left: -20px;
+            top: -30px;
+        }
+
+        .right {
+            position: absolute;
+            right: -20px;
+            bottom: -30px;
+        }
+    }
+
+    .video-wrapper {
+        padding-left: 10px;
+
+        .video-background {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            z-index: 10;
+        }
+    }
+
+    .vector {
+        position: absolute;
+        bottom: -100px;
+        right: -50px;
+        width: 300px;
+        z-index: 9;
+    }
+}
+
+// Start Style
+.style {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .left-bg {
+        background-image: url(/assets/images/amber-bg.webp);
+        background-size: cover;
+        background-position: center;
+        padding: 100px 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .style-images {
+        padding-right: 0;
+    }
+
+    .s-item {
+        overflow: hidden;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .top {
+        display: flex;
+        gap: 10px;
+
+        .top-right {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+
+}
+
+// Start Suites
+.suites {
+    position: relative;
+
+    .slick-slider {
+        margin: 0 -6px;
+    }
+
+    .slick-slide {
+        margin-right: 6px;
+        margin-left: 6px;
+    }
+
+    .suites-info {
+        background: #FEFAEE;
+        box-shadow: 0px 0px 34px 0px #39202073;
+        width: 500px;
+        padding: 70px 50px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// Start download
+.download {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    text-align: center;
+}
+
+// Start lifestyle    
+.lifestyle {
+    display: flex;
+    height: 700px;
+
+    .left {
+        width: 25%;
+        background-image: url(/assets/images/luxury-left.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: width 0.5s ease;
+    }
+
+    .middle {
+        width: 50%;
+        text-align: center;
+        background-image: url(/assets/images/amber-bg.webp);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        transition: width 0.5s ease;
+
+        .content {
+            width: 550px;
+            margin: 0 auto;
+        }
+    }
+
+    .right {
+        width: 25%;
+        background-image: url(/assets/images/luxury-right.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: width 0.5s ease;
+    }
+
+    &:hover {
+        .left {
+            width: 27%;
+        }
+
+        .middle {
+            width: 46%;
+        }
+
+        .right {
+            width: 27%;
+        }
+    }
+}
+
+// Start Amenities
+.amenities {
+    padding-top: 80px;
+    padding-bottom: 110px;
+
+    .slick-slider {
+        margin: 0 -10px;
+    }
+
+    .slick-slide {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .slick-prev {
+        background: #fefaeeac !important;
+        height: 100%;
+        width: 40px;
+        z-index: 10;
+        left: 0;
+
+        &:before {
+            content: url(/assets/images/prev.png);
+        }
+    }
+
+    .slick-next {
+        background: #fefaeeac !important;
+        height: 100%;
+        width: 40px;
+        z-index: 10;
+        right: 0;
+
+        &:before {
+            content: url(/assets/images/next.png);
+        }
+    }
+
+
+    .info {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-left: 50px;
+        padding-right: 60px;
+    }
+
+    .specification {
+        padding-top: 110px;
+
+        .s-info {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Start Interiors
+.interiors {
     height: 120vh;
+    background-image: url(/assets/images/interiors.webp);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    transition: background-size 0.8s ease-in-out;
+    margin-bottom: 70px;
+
+    &:hover {
+        background-size: 103%;
+    }
+
+    .i-info {
+        background-color: #FEFAEE;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        padding: 60px 40px;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-8%, -50%);
+    }
+}
+
+// Start Gallery   
+.gallery {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(/assets/images/amber-bg.webp);
+    background-position: center;
+    background-size: cover;
 }
