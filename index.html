@@ -262,8 +262,89 @@
                 </div>
             </div>
         </section>
+        <!-- Start Gallery -->
         <section class="gallery">
             <div class="container">
+                <div class="rev_slider">
+                    <div class="rev_slide">
+                        <img src="assets/images/gallery/g1.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="rev_slide">
+                        <img src="assets/images/gallery/g2.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="rev_slide">
+                        <img src="assets/images/gallery/g3.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="rev_slide">
+                        <img src="assets/images/gallery/g4.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="rev_slide">
+                        <img src="assets/images/gallery/g5.webp" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Plans -->
+        <section class="plans">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="plan-item">
+                            <img src="assets/images/plans/p1.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="plan-item">
+                            <img src="assets/images/plans/p2.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="plan-item">
+                            <img src="assets/images/plans/p3.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="plan-item">
+                            <img src="assets/images/plans/p4.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="plan-item">
+                            <img src="assets/images/plans/p5.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="plan-item">
+                            <img src="assets/images/plans/p6.webp" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Locations -->
+        <section class="location">
+            <div class="container">
+                <div class="row bg">
+                    <div class="col-md-7">
+                    </div>
+                    <div class="col-md-5">
+                        <div class="info">
+                            <div>
+                                <p class="label">Location</p>
+                                <h1 class="heading primary">JUMEIRAH <br />Garden city</h1>
+                                <p class="para primary pt-4 pb-2">Nestled in a prime Dubai location, our residences
+                                    offer proximity to the Burj Khalifa, Dubai Mall, City Walk, La Mer Beach, Museum of
+                                    the Future, and the Dubai Frame. Enjoy spectacular views, contemporary luxury, and
+                                    seamless access to renowned cultural and leisure attractions. This prestigious
+                                    address promises unmatched convenience and sophistication.</p>
+                                <p class="para primary pb-5"> Dubai International Financial Center, Burj Khalifa, Dubai
+                                    Mall, La Mer Beach, Museum of the Future, City Walk, and Coca-Cola Arena are all
+                                    within a 10-minute reach.</p>
+                                <button class="btn-amber">Discover More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -288,6 +369,58 @@
             autoplay: true,
             autoplaySpeed: 5000,
         });
+    </script>
+    <script>
+        var rev = $('.rev_slider');
+
+        rev.on('init', function (event, slick) {
+            var cur = $(slick.$slides[slick.currentSlide]),
+                next = cur.next(),
+                prev = cur.prev();
+
+            prev.addClass('slick-sprev');
+            next.addClass('slick-snext');
+            cur.removeClass('slick-snext').removeClass('slick-sprev');
+
+            slick.$prev = prev;
+            slick.$next = next;
+        }).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+            var cur = $(slick.$slides[nextSlide]),
+                next = cur.next(),
+                prev = cur.prev();
+
+            slick.$prev.removeClass('slick-sprev');
+            slick.$next.removeClass('slick-snext');
+
+            prev.addClass('slick-sprev');
+            next.addClass('slick-snext');
+
+            slick.$prev = prev;
+            slick.$next = next;
+            cur.removeClass('slick-snext').removeClass('slick-sprev');
+        });
+
+        rev.slick({
+            speed: 300,
+            arrows: true,
+            dots: true,
+            focusOnSelect: true,
+            prevArrow: '<img src="/assets/images/arrow.svg" class="prev">',
+            nextArrow: '<img src="/assets/images/arrow.svg" class="next">',
+            infinite: true,
+            centerMode: true,
+            slidesPerRow: 1,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            centerPadding: '0',
+            swipe: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            customPaging: function () {
+                return '';
+            },
+        });
+
     </script>
 </body>
 

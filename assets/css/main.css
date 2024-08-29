@@ -470,4 +470,97 @@ p.label {
   background-image: url(/assets/images/amber-bg.webp);
   background-position: center;
   background-size: cover;
+}
+.gallery .container {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+.gallery .slick-list {
+  padding-top: 10% !important;
+  padding-bottom: 10% !important;
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+}
+.gallery .slick-dots {
+  text-align: center;
+}
+.gallery .slick-dots li {
+  background: #FEFAEE;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin: 0 10px;
+}
+.gallery .slick-dots li.slick-active {
+  background-color: #C07841;
+}
+.gallery .slick-track {
+  max-width: 100% !important;
+  transform: translate3d(0, 0, 0) !important;
+  perspective: 100px;
+}
+.gallery .slick-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  width: 100% !important;
+  transform: translate3d(0, 0, 0);
+  transition: transform 1s, opacity 1s;
+}
+.gallery .slick-snext,
+.gallery .slick-sprev {
+  display: block;
+}
+.gallery .slick-current {
+  opacity: 1;
+  position: relative;
+  display: block;
+  transform: translate3d(0, 0, 20px);
+  z-index: 2;
+}
+.gallery .slick-snext {
+  opacity: 1;
+  transform: translate3d(20%, 0, 0px);
+  z-index: 1;
+}
+.gallery .slick-sprev {
+  opacity: 1;
+  transform: translate3d(-20%, 0, 0px);
+}
+.gallery .slick-arrow {
+  width: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+.gallery .slick-arrow.prev {
+  position: absolute;
+  bottom: -28px;
+  left: 35%;
+}
+.gallery .slick-arrow.next {
+  position: absolute;
+  bottom: -28px;
+  right: 35%;
+  transform: rotate(180deg);
+}
+
+.plans {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+.plans .plan-item {
+  margin-bottom: 30px;
+}
+
+.location .bg {
+  background-image: url(/assets/images/location-bg.webp);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 1100px;
 }/*# sourceMappingURL=main.css.map */

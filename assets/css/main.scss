@@ -585,4 +585,118 @@ p.label {
     background-image: url(/assets/images/amber-bg.webp);
     background-position: center;
     background-size: cover;
+
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .slick-list {
+        padding-top: 10% !important;
+        padding-bottom: 10% !important;
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+    }
+
+    .slick-dots {
+        text-align: center;
+
+
+        li {
+            background: #FEFAEE;
+            border-radius: 50%;
+            width: 14px;
+            height: 14px;
+            margin: 0 10px;
+
+            &.slick-active {
+                background-color: #C07841;
+            }
+        }
+    }
+
+    .slick-track {
+        max-width: 100% !important;
+        transform: translate3d(0, 0, 0) !important;
+        perspective: 100px;
+    }
+
+    .slick-slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        opacity: 0;
+        width: 100% !important;
+        transform: translate3d(0, 0, 0);
+        transition: transform 1s, opacity 1s;
+    }
+
+    .slick-snext,
+    .slick-sprev {
+        display: block;
+    }
+
+    .slick-current {
+        opacity: 1;
+        position: relative;
+        display: block;
+        transform: translate3d(0, 0, 20px);
+        z-index: 2;
+    }
+
+    .slick-snext {
+        opacity: 1;
+        transform: translate3d(20%, 0, 0px);
+        z-index: 1;
+    }
+
+    .slick-sprev {
+        opacity: 1;
+        transform: translate3d(-20%, 0, 0px);
+    }
+
+    .slick-arrow {
+        width: 20px;
+        z-index: 10;
+        cursor: pointer;
+
+        &.prev {
+            position: absolute;
+            bottom: -28px;
+            left: 35%;
+        }
+
+        &.next {
+            position: absolute;
+            bottom: -28px;
+            right: 35%;
+            transform: rotate(180deg);
+        }
+    }
+
+}
+
+// Start Plans
+.plans {
+    padding-top: 110px;
+    padding-bottom: 100px;
+
+    .plan-item {
+        margin-bottom: 30px;
+    }
+}
+
+// Start location
+.location {
+    .bg {
+        background-image: url(/assets/images/location-bg.webp);
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        height: 1100px;
+    }
 }
