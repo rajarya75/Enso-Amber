@@ -221,6 +221,24 @@
                             <div>
                                 <img src="assets/images/amenities/a5.webp" class="img-fluid" alt="">
                             </div>
+                            <div>
+                                <img src="assets/images/amenities/a6.webp" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/amenities/a7.webp" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/amenities/a8.webp" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/amenities/a9.webp" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/amenities/a10.webp" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <img src="assets/images/amenities/a11.webp" class="img-fluid" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -870,6 +888,7 @@
             });
 
             $('.amenities-slider').slick({
+                // infinite: false,
                 centerMode: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -906,6 +925,25 @@
                 infinite: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
+            });
+
+            $('#plan1').on('shown.bs.modal', function () {
+                $('.plan1').slick('setPosition');
+            });
+            $('#plan2').on('shown.bs.modal', function () {
+                $('.plan2').slick('setPosition');
+            });
+            $('#plan3').on('shown.bs.modal', function () {
+                $('.plan3').slick('setPosition');
+            });
+            $('#plan4').on('shown.bs.modal', function () {
+                $('.plan4').slick('setPosition');
+            });
+            $('#plan5').on('shown.bs.modal', function () {
+                $('.plan5').slick('setPosition');
+            });
+            $('#plan6').on('shown.bs.modal', function () {
+                $('.plan6').slick('setPosition');
             });
         </script>
         <script>
