@@ -1150,3 +1150,191 @@ p.label {
 }
 
 /*===== Custom Modal Animation =======*/
+
+// Responsiveness
+@media(max-width: 768px) {
+    .heading {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .para {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    p.label {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .btn-amber {
+        font-size: 12px;
+        padding: 10px 40px;
+    }
+
+    .banner {
+        height: 100vh;
+
+        .middle {
+            width: 100%;
+
+            .logo {
+                img {
+                    width: 250px;
+                }
+            }
+        }
+
+        .left {
+            width: 0;
+        }
+
+        .right {
+            width: 0;
+        }
+    }
+
+    .project {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .row .text-center {
+            padding-right: 0;
+        }
+
+        .video-wrapper {
+            padding-left: 0px;
+
+            .video-background {
+                height: 300px;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .style {
+        .left-bg {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .style-images {
+            padding-left: 0;
+        }
+    }
+
+    .lifestyle {
+        height: 500px;
+
+        .middle {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .left,
+        .right {
+            width: 0;
+        }
+
+        &:hover .middle {
+            width: 100%;
+        }
+    }
+
+    .amenities {
+        padding-bottom: 20px;
+
+        .info {
+            margin-bottom: 40px;
+        }
+
+        .specification {
+            padding-top: 60px;
+
+            .s-info {
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .interiors {
+        height: auto;
+        margin-bottom: 0;
+
+        .i-info {
+            transform: unset;
+            position: unset;
+        }
+    }
+
+    .gallery {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .slick-arrow.prev {
+            left: 10%;
+        }
+
+        .slick-arrow.next {
+            right: 10%;
+        }
+    }
+
+    .location {
+        .bg {
+            background-position: top center;
+        }
+
+        &:hover {
+            .bg {
+                background-position: top center;
+            }
+        }
+    }
+
+    .distination {
+        ul {
+            padding-left: 15px;
+            padding-top: 0;
+        }
+    }
+
+    .footer {
+        .top {
+            flex-wrap: wrap;
+
+            .box1,
+            .box2,
+            .box3,
+            .box4 {
+                width: 100%;
+            }
+
+            .box2 {
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+
+            .box3 {
+                padding-left: 0;
+
+                div {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .box4 {
+                padding-left: 0;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .bottom {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
