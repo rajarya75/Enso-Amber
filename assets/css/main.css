@@ -567,6 +567,7 @@ p.label {
 }
 .plans .plan-item {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .location {
@@ -756,4 +757,245 @@ p.label {
 }
 .footer .bottom p img {
   width: 30px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.modal-title {
+  color: #ECC4B3;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+.modal-header h3 {
+  padding-left: 40px;
+  margin-bottom: -30px;
+  padding-top: 16px;
+  color: #F7F2EF;
+}
+
+.btn-close {
+  background: url(/assets/images/close.png);
+  background-repeat: no-repeat;
+}
+
+#downloadBrochure .modal-dialog {
+  max-width: 1050px;
+}
+#downloadBrochure .modal-dialog .modal-content {
+  background-image: url(/assets/images/amber-bg.webp);
+  background-size: cover;
+  background-position: center;
+}
+#downloadBrochure .modal-dialog .modal-content .contact-form {
+  width: 90%;
+  margin: 30px auto;
+}
+
+#thanYouModal .modal-dialog {
+  max-width: 900px;
+}
+#thanYouModal .modal-dialog .modal-content {
+  background-color: #FEFAEE;
+}
+#thanYouModal .modal-dialog .modal-content .btn-close {
+  margin-top: 8px;
+}
+#thanYouModal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+  overflow: hidden;
+}
+#thanYouModal .modal-dialog .modal-content .modal-body .thanks-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+#thanYouModal .modal-dialog .modal-content .modal-body .thanks-box .left {
+  text-align: center;
+  width: 50%;
+}
+
+#specificationModal .modal-dialog {
+  max-width: 1100px;
+}
+#specificationModal .modal-dialog .modal-body {
+  padding: 0;
+}
+#specificationModal .modal-dialog .modal-body .btn-close {
+  position: absolute;
+  right: 33px;
+  top: 30px;
+  opacity: 0;
+  z-index: 1000;
+}
+
+#plan1 .slick-prev,
+#plan2 .slick-prev,
+#plan3 .slick-prev,
+#plan4 .slick-prev,
+#plan5 .slick-prev,
+#plan6 .slick-prev {
+  width: 30px;
+  z-index: 10;
+  left: 0;
+}
+#plan1 .slick-prev:before,
+#plan2 .slick-prev:before,
+#plan3 .slick-prev:before,
+#plan4 .slick-prev:before,
+#plan5 .slick-prev:before,
+#plan6 .slick-prev:before {
+  content: url(/assets/images/prev.png);
+}
+#plan1 .slick-next,
+#plan2 .slick-next,
+#plan3 .slick-next,
+#plan4 .slick-next,
+#plan5 .slick-next,
+#plan6 .slick-next {
+  width: 30px;
+  z-index: 10;
+  right: 0;
+}
+#plan1 .slick-next:before,
+#plan2 .slick-next:before,
+#plan3 .slick-next:before,
+#plan4 .slick-next:before,
+#plan5 .slick-next:before,
+#plan6 .slick-next:before {
+  content: url(/assets/images/next.png);
+}
+#plan1 .modal-dialog,
+#plan2 .modal-dialog,
+#plan3 .modal-dialog,
+#plan4 .modal-dialog,
+#plan5 .modal-dialog,
+#plan6 .modal-dialog {
+  max-width: 1400px;
+}
+#plan1 .modal-dialog .modal-content .modal-body,
+#plan2 .modal-dialog .modal-content .modal-body,
+#plan3 .modal-dialog .modal-content .modal-body,
+#plan4 .modal-dialog .modal-content .modal-body,
+#plan5 .modal-dialog .modal-content .modal-body,
+#plan6 .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+#plan1 .modal-dialog .modal-content .modal-body .btn-close,
+#plan2 .modal-dialog .modal-content .modal-body .btn-close,
+#plan3 .modal-dialog .modal-content .modal-body .btn-close,
+#plan4 .modal-dialog .modal-content .modal-body .btn-close,
+#plan5 .modal-dialog .modal-content .modal-body .btn-close,
+#plan6 .modal-dialog .modal-content .modal-body .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  opacity: 1;
+  z-index: 100;
+}
+#plan1 .modal-dialog .modal-content .modal-body .plan-content,
+#plan2 .modal-dialog .modal-content .modal-body .plan-content,
+#plan3 .modal-dialog .modal-content .modal-body .plan-content,
+#plan4 .modal-dialog .modal-content .modal-body .plan-content,
+#plan5 .modal-dialog .modal-content .modal-body .plan-content,
+#plan6 .modal-dialog .modal-content .modal-body .plan-content {
+  display: flex;
+  align-items: center;
+}
+#plan1 .modal-dialog .modal-content .modal-body .plan-content .left,
+#plan2 .modal-dialog .modal-content .modal-body .plan-content .left,
+#plan3 .modal-dialog .modal-content .modal-body .plan-content .left,
+#plan4 .modal-dialog .modal-content .modal-body .plan-content .left,
+#plan5 .modal-dialog .modal-content .modal-body .plan-content .left,
+#plan6 .modal-dialog .modal-content .modal-body .plan-content .left {
+  background: rgba(192, 120, 65, 0.1019607843);
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 30%;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#plan1 .modal-dialog .modal-content .modal-body .plan-content .left h2,
+#plan2 .modal-dialog .modal-content .modal-body .plan-content .left h2,
+#plan3 .modal-dialog .modal-content .modal-body .plan-content .left h2,
+#plan4 .modal-dialog .modal-content .modal-body .plan-content .left h2,
+#plan5 .modal-dialog .modal-content .modal-body .plan-content .left h2,
+#plan6 .modal-dialog .modal-content .modal-body .plan-content .left h2 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #040100;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+#plan1 .modal-dialog .modal-content .modal-body .plan-content .left h5,
+#plan2 .modal-dialog .modal-content .modal-body .plan-content .left h5,
+#plan3 .modal-dialog .modal-content .modal-body .plan-content .left h5,
+#plan4 .modal-dialog .modal-content .modal-body .plan-content .left h5,
+#plan5 .modal-dialog .modal-content .modal-body .plan-content .left h5,
+#plan6 .modal-dialog .modal-content .modal-body .plan-content .left h5 {
+  font-size: 16px;
+  line-height: 28px;
+  color: #040100;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+#plan1 .modal-dialog .modal-content .modal-body .plan-content .left h3,
+#plan2 .modal-dialog .modal-content .modal-body .plan-content .left h3,
+#plan3 .modal-dialog .modal-content .modal-body .plan-content .left h3,
+#plan4 .modal-dialog .modal-content .modal-body .plan-content .left h3,
+#plan5 .modal-dialog .modal-content .modal-body .plan-content .left h3,
+#plan6 .modal-dialog .modal-content .modal-body .plan-content .left h3 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #C07841;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+#plan1 .modal-dialog .modal-content .modal-body .plan-content .left p,
+#plan2 .modal-dialog .modal-content .modal-body .plan-content .left p,
+#plan3 .modal-dialog .modal-content .modal-body .plan-content .left p,
+#plan4 .modal-dialog .modal-content .modal-body .plan-content .left p,
+#plan5 .modal-dialog .modal-content .modal-body .plan-content .left p,
+#plan6 .modal-dialog .modal-content .modal-body .plan-content .left p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #040100;
+  font-weight: 300;
+}
+#plan1 .modal-dialog .modal-content .modal-body .plan-content .right,
+#plan2 .modal-dialog .modal-content .modal-body .plan-content .right,
+#plan3 .modal-dialog .modal-content .modal-body .plan-content .right,
+#plan4 .modal-dialog .modal-content .modal-body .plan-content .right,
+#plan5 .modal-dialog .modal-content .modal-body .plan-content .right,
+#plan6 .modal-dialog .modal-content .modal-body .plan-content .right {
+  width: 70%;
+}
+
+/*===== Custom Modal Animation =======*/
+.modal.fade .modal-dialog {
+  transition: transform 0.5s ease-out;
+  transform: translateY(-100%);
+  /* Start the modal off-screen (above the view) */
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+  /* Slide the modal into view */
+}
+
+.modal.fade .modal-dialog {
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/*===== Custom Modal Animation =======*//*# sourceMappingURL=main.css.map */

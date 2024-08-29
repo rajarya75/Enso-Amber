@@ -698,6 +698,7 @@ p.label {
 
     .plan-item {
         margin-bottom: 30px;
+        cursor: pointer;
     }
 }
 
@@ -933,3 +934,219 @@ p.label {
         }
     }
 }
+
+// Download Brocure Modal
+.modal-title {
+    color: $primary;
+}
+
+.modal-header {
+    border-bottom: 0;
+
+    h3 {
+        padding-left: 40px;
+        margin-bottom: -30px;
+        padding-top: 16px;
+        color: #F7F2EF;
+    }
+}
+
+.btn-close {
+    background: url(/assets/images/close.png);
+    background-repeat: no-repeat;
+}
+
+#downloadBrochure {
+    .modal-dialog {
+        max-width: 1050px;
+
+        .modal-content {
+            background-image: url(/assets/images/amber-bg.webp);
+            background-size: cover;
+            background-position: center;
+
+            .contact-form {
+                width: 90%;
+                margin: 30px auto;
+            }
+        }
+    }
+}
+
+#thanYouModal {
+    .modal-dialog {
+        max-width: 900px;
+
+        .modal-content {
+            background-color: $primaryLight;
+
+            .btn-close {
+                margin-top: 8px;
+            }
+
+            .modal-body {
+                padding: 0;
+                overflow: hidden;
+
+                .thanks-box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-top: 20px;
+                    padding-bottom: 70px;
+
+                    .left {
+                        text-align: center;
+                        width: 50%;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+#specificationModal {
+    .modal-dialog {
+        max-width: 1100px;
+
+        .modal-body {
+            padding: 0;
+
+            .btn-close {
+                position: absolute;
+                right: 33px;
+                top: 30px;
+                opacity: 0;
+                z-index: 1000;
+            }
+        }
+    }
+}
+
+#plan1,
+#plan2,
+#plan3,
+#plan4,
+#plan5,
+#plan6 {
+    .slick-prev {
+        width: 30px;
+        z-index: 10;
+        left: 0;
+
+        &:before {
+            content: url(/assets/images/prev.png);
+        }
+    }
+
+    .slick-next {
+        width: 30px;
+        z-index: 10;
+        right: 0;
+
+        &:before {
+            content: url(/assets/images/next.png);
+        }
+    }
+
+    .modal-dialog {
+        max-width: 1400px;
+
+        .modal-content {
+
+            .modal-body {
+                padding: 0;
+
+
+                .btn-close {
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    opacity: 1;
+                    z-index: 100;
+                }
+
+                .plan-content {
+                    display: flex;
+                    align-items: center;
+
+                    .left {
+                        background: #C078411A;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        width: 30%;
+                        text-align: center;
+                        height: 100vh;
+                        display: flex;
+                        align-items: center;
+
+                        h2 {
+                            font-size: 32px;
+                            line-height: 40px;
+                            color: $secondary;
+                            letter-spacing: 2px;
+                            font-weight: 400;
+                        }
+
+                        h5 {
+                            font-size: 16px;
+                            line-height: 28px;
+                            color: $secondary;
+                            letter-spacing: 2px;
+                            font-weight: 400;
+                        }
+
+                        h3 {
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #C07841;
+                            font-weight: 700;
+                            margin-top: 60px;
+                            margin-bottom: 60px;
+                        }
+
+                        p {
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: $secondary;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .right {
+                        width: 70%;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*===== Custom Modal Animation =======*/
+.modal.fade .modal-dialog {
+    transition: transform 0.5s ease-out;
+    transform: translateY(-100%);
+    /* Start the modal off-screen (above the view) */
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translateY(0);
+    /* Slide the modal into view */
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*===== Custom Modal Animation =======*/

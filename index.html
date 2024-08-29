@@ -166,7 +166,8 @@
             <div class="container">
                 <h1 class="heading black pb-4">Elegant homes featuring bespoke design and prime <br /> locations,
                     crafted with the highest standards in mind.</h1>
-                <button class="btn-amber">Download Brochure</button>
+                <button class="btn-amber" data-bs-target="#downloadBrochure" data-bs-toggle="modal">Download
+                    Brochure</button>
             </div>
         </section>
         <!-- Start lifestyle -->
@@ -234,7 +235,8 @@
                                         functionality with unmatched elegance. Every space is crafted to enhance your
                                         comfort and reflect your taste for the finer things, ensuring your home is not
                                         just a residence but a reflection of luxury living</p>
-                                    <a class="btn-amber" href="#discoverMore">Discover More </a>
+                                    <button class="btn-amber" data-bs-target="#specificationModal"
+                                        data-bs-toggle="modal">Discover More </button>
                                 </div>
                             </div>
                         </div>
@@ -289,32 +291,32 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="plan-item">
+                        <div class="plan-item" data-bs-target="#plan1" data-bs-toggle="modal">
                             <img src="assets/images/plans/p1.webp" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="plan-item">
+                        <div class="plan-item" data-bs-target="#plan2" data-bs-toggle="modal">
                             <img src="assets/images/plans/p2.webp" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="plan-item">
+                        <div class="plan-item" data-bs-target="#plan3" data-bs-toggle="modal">
                             <img src="assets/images/plans/p3.webp" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="plan-item">
+                        <div class="plan-item" data-bs-target="#plan4" data-bs-toggle="modal">
                             <img src="assets/images/plans/p4.webp" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="plan-item">
+                        <div class="plan-item" data-bs-target="#plan5" data-bs-toggle="modal">
                             <img src="assets/images/plans/p5.webp" class="img-fluid" alt="">
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="plan-item">
+                        <div class="plan-item" data-bs-target="#plan6" data-bs-toggle="modal">
                             <img src="assets/images/plans/p6.webp" class="img-fluid" alt="">
                         </div>
                     </div>
@@ -542,6 +544,317 @@
                 </div>
             </div>
         </section>
+        <!-- Download Brochure Modal -->
+        <div class="modal fade" id="downloadBrochure" aria-hidden="true" aria-labelledby="downloadBrochure"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">DOWNLOAD BROCHURE</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="fullname" class="form-label">FULL Name*</label>
+                                        <input type="text" class="form-control" id="fullname" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="phonenumber" class="form-label">PHONE NUMBER*</label>
+                                        <input type="text" class="form-control" id="phonenumber" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address*</label>
+                                        <input type="email" class="form-control" id="email" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="enquiry" class="form-label">TYPE OF ENQUIRY</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected> Select</option>
+                                            <option value="1">Sales</option>
+                                            <option value="2">Customer Care</option>
+                                            <option value="3">Press & Media</option>
+                                            <option value="4">Invester relations</option>
+                                            <option value="5">Agent relations</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">MESSAGE</label>
+                                        <textarea class="form-control" id="message" rows="2"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>*Required fields</p>
+                            <div class="row">
+                                <div class="col-md-12" style="text-align: right;">
+                                    <button class="btn-amber" type="submit" data-bs-target="#thanYouModal"
+                                        data-bs-toggle="modal" data-bs-dismiss="modal">Download Brochure</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="thanYouModal" aria-hidden="true" aria-labelledby="thanYouModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalToggleLabel2"></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="thanks-box">
+                            <div class="left">
+                                <h1 class="heading">Thank You</h1>
+                                <p class="label pt-2 pb-3">for submitting your interest</p>
+                                <p class="ready">Your file is ready to do download</p>
+                            </div>
+                            <div class="right">
+                                <img src="/assets/images/thanks-bg.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Specification Modal -->
+        <div class="modal fade" id="specificationModal" aria-hidden="true" aria-labelledby="specificationModal"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="/assets/images/specificationModal.webp" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Plan1 Modal -->
+        <div class="modal fade" id="plan1" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="plan-content">
+                            <div class="left">
+                                <div>
+                                    <h2>1 BEDROOM + <br />1.5 BATH</h2>
+                                    <h5>From 722 to 795 SQ.FT <br /> 1 BEDROOM + STUDY + 2 BATH </h5>
+                                    <h3>Spacious, luxurious, functional,<br /> modern, exclusive</h3>
+                                    <p>Discover the ultimate level of sophistication and coziness within the Luxuria 1
+                                        Bedroom Suite. Open shelving, high ceilings, and exquisite marble tiling
+                                        decorate this sophisticated haven, which skillfully combines a calm sitting area
+                                        and a warm eating area. It is also uniquely lit. This elegant style is reflected
+                                        in the bathroom and bedroom, creating a harmonious and peaceful living space.
+                                        Welcome to a world of tasteful living and subtle luxury. </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="plan1">
+                                    <div>
+                                        <img src="/assets/images/plans/p11.webp" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/plans/p12.webp" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/plans/p13.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Plan2 Modal -->
+        <div class="modal fade" id="plan2" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="plan-content">
+                            <div class="left">
+                                <div>
+                                    <h2>1 BEDROOM +<br /> 1.5 BATH</h2>
+                                    <h5>From 722 to 795 SQ.FT<br /> 1 BEDROOM + STUDY + 2 BATH </h5>
+                                    <h3>Spacious, luxurious, functional,<br /> modern, exclusive</h3>
+                                    <p>Discover the ultimate level of sophistication and coziness within the Luxuria 1
+                                        Bedroom Suite. Open shelving, high ceilings, and exquisite marble tiling
+                                        decorate this sophisticated haven, which skillfully combines a calm sitting area
+                                        and a warm eating area. It is also uniquely lit. This elegant style is reflected
+                                        in the bathroom and bedroom, creating a harmonious and peaceful living space.
+                                        Welcome to a world of tasteful living and subtle luxury. </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="plan2">
+                                    <div>
+                                        <img src="/assets/images/plans/p22.webp" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/plans/p23.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Plan3 Modal -->
+        <div class="modal fade" id="plan3" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="plan-content">
+                            <div class="left">
+                                <div>
+                                    <h2>1 BEDROOM +<br /> 1.5 BATH</h2>
+                                    <h5>From 1130 to 1437 SQ.FT</h5>
+                                    <h3>Elegant, spacious, refined,<br /> luxurious, exclusive</h3>
+                                    <p>Enter the serene haven of elegance that is the Celestial 1 Bedroom Suite.
+                                        Featuring a calm living area and a dining area appropriate for small gatherings,
+                                        this opulent suite offers the ideal combination of sophisticated living and
+                                        stylish comfort. A feeling of refined luxury is evoked by every feature, which
+                                        includes custom lighting, high ceilings, and beautiful marble finishes.
+                                        Consistent with this style, the bedroom and bathroom provide a smooth and serene
+                                        haven. The Celestial 1 Bedroom Suite will elevate your living experience since
+                                        it combines elegance and tranquility. </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="plan3">
+                                    <div>
+                                        <img src="/assets/images/plans/p33.webp" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/plans/p34.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Plan4 Modal -->
+        <div class="modal fade" id="plan4" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="plan-content">
+                            <div class="left">
+                                <div>
+                                    <h2>1 BEDROOM +<br /> STUDY + 2 BATH</h2>
+                                    <h5>From 848 to 997 SQ.FT</h5>
+                                    <h3>Opulent, expansive, luxurious,<br /> prestigious, unparalleled </h3>
+                                    <p>The Archon 1 Bedroom Suite—a place where elegance and practicality converge. This
+                                        magnificent apartment includes two well-decorated bathrooms, a dedicated study,
+                                        and a roomy bedroom. With custom lighting and elegant finishes, the living area
+                                        and dining area flow together smoothly. The study offers the ideal hideout for
+                                        productivity, with high ceilings and contemporary architectural features
+                                        creating an air of sophistication. With its tasteful fusion of style and
+                                        functionality, the Archon 1 Bedroom Suite redefines elegant living. </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="plan4">
+                                    <div>
+                                        <img src="/assets/images/plans/p44.webp" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/plans/p45.webp" class="img-fluid" alt="">
+                                    </div>
+                                    <div>
+                                        <img src="/assets/images/plans/p46.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Plan5 Modal -->
+        <div class="modal fade" id="plan5" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="plan-content">
+                            <div class="left">
+                                <div>
+                                    <h2>2 BEDROOM +<br /> MAID + 3 BATH</h2>
+                                    <h5>From 848 to 997 SQ.FT</h5>
+                                    <h3>Opulent, expansive, luxurious,<br /> prestigious, unparalleled </h3>
+                                    <p>Take in unmatched luxury as you stay in the Sovran 2 Bedroom Suite. This suite is
+                                        very sophisticated, with two large bedrooms, a maid's room, and three chic
+                                        bathrooms. A sophisticated atmosphere is created by tall ceilings, elegant
+                                        living and dining areas, and custom lighting. The Sovran 2 Bedroom Suite offers
+                                        the ideal fusion of style and functionality. </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="plan5">
+                                    <div>
+                                        <img src="/assets/images/plans/p55.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Plan6 Modal -->
+        <div class="modal fade" id="plan6" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="plan-content">
+                            <div class="left">
+                                <div>
+                                    <h2>3 BEDROOM +<br /> MAID + 4 BATH</h2>
+                                    <h5>From 848 to 997 SQ.FT</h5>
+                                    <h3>Opulent, expansive, luxurious,<br /> prestigious, unparalleled </h3>
+                                    <p>The Grandiose 3 Bedroom Suite, where luxury meets elegance. Featuring three
+                                        spacious bedrooms, a maid's room, and four stylish bathrooms, this suite offers
+                                        expansive living and dining areas adorned with high ceilings and sophisticated
+                                        lighting. Every detail is meticulously curated for opulent comfort. Experience
+                                        unparalleled refinement in the Grandiose 3 Bedroom Suite. </p>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="plan6">
+                                    <div>
+                                        <img src="/assets/images/plans/p66.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="/assets/js/main.js"></script>
         <script src="/assets/js/slick.min.js"></script>
         <!-- Bootstrap JS -->
@@ -562,6 +875,37 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 5000,
+            });
+
+            $('.plan1').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            $('.plan2').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            $('.plan3').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            $('.plan4').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            $('.plan5').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            });
+            $('.plan6').slick({
+                infinite: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             });
         </script>
         <script>
