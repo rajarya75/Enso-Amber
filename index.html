@@ -449,18 +449,18 @@
                     <h1 class="heading">Contact us</h1>
                     <p class="label">For any enquiries or appointment requests</p>
                 </div>
-                <form action="" class="contact-form">
+                <form action="" class="contact-form" id="contactForm">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="fullname" class="form-label">FULL Name*</label>
-                                <input type="text" class="form-control" id="fullname" placeholder="">
+                                <input type="text" class="form-control" id="fullname" placeholder="" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="phonenumber" class="form-label">PHONE NUMBER*</label>
-                                <input type="text" class="form-control" id="phonenumber" placeholder="">
+                                <input type="text" class="form-control" id="phonenumber" placeholder="" required>
                             </div>
                         </div>
                     </div>
@@ -468,19 +468,19 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address*</label>
-                                <input type="email" class="form-control" id="email" placeholder="">
+                                <input type="email" class="form-control" id="email" placeholder="" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="enquiry" class="form-label">TYPE OF ENQUIRY</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected> Select</option>
-                                    <option value="1">Sales</option>
-                                    <option value="2">Customer Care</option>
-                                    <option value="3">Press & Media</option>
-                                    <option value="4">Invester relations</option>
-                                    <option value="5">Agent relations</option>
+                                <select class="form-select" id="enquiry" aria-label="Default select example" required>
+                                    <option selected disabled>Select</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value="Customer Care">Customer Care</option>
+                                    <option value="Press & Media">Press & Media</option>
+                                    <option value="Investor Relations">Investor Relations</option>
+                                    <option value="Agent Relations">Agent Relations</option>
                                 </select>
                             </div>
                         </div>
@@ -500,6 +500,10 @@
                         </div>
                     </div>
                 </form>
+                <div id="successMessage" style="display: none; text-align: center;">
+                    <h2>Thank you for your enquiry!</h2>
+                    <p>We have received your message and will get back to you shortly.</p>
+                </div>
             </div>
         </section>
         <!-- Start Footer -->
@@ -875,6 +879,7 @@
         </div>
         <script src="/assets/js/main.js"></script>
         <script src="/assets/js/slick.min.js"></script>
+        <script src="/assets/js/leadForm.js"></script>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
