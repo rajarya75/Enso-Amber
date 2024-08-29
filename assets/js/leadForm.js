@@ -35,3 +35,45 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
       console.error("Error:", error);
     });
 });
+
+// Download Brochure===================================================================
+document
+  .getElementById("brochureForm")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Gather form data
+    const formData = {
+      name: document.getElementById("fullname").value,
+      email: document.getElementById("email").value,
+      mobileCode: "+971", // Adjust if mobile code is dynamic
+      contactNumber: document.getElementById("phonenumber").value,
+      message: document.getElementById("message").value,
+      typeOfEnquiry: document.getElementById("enquiry").value,
+      from: "Contact Us",
+    };
+
+    // Send data to API
+    fetch("https://betaapi.enso.inc/api/website/enquiry", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          // Adjust based on your API response
+          // Hide form and open thank you modal
+          document.getElementById("brochureForm").style.display = "none";
+          new bootstrap.Modal(document.getElementById("thankYouModal")).show();
+
+          // Trigger PDF download
+          window.location.href = "/path/to/your/brochure.pdf";
+        } else {
+          alert("There was an issue with your submission. Please try again.");
+        }
+      })
+      .catch((error) => console.error("Error:", error));
+  });

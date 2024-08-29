@@ -500,9 +500,9 @@
                         </div>
                     </div>
                 </form>
-                <div id="successMessage" style="display: none; text-align: center;">
-                    <h2>Thank you for your enquiry!</h2>
-                    <p>We have received your message and will get back to you shortly.</p>
+                <div id="successMessage" style="display: none; text-align: center;" class="py-5 px-2">
+                    <h1 class="heading">Thank you for your enquiry!</h1>
+                    <p class="para white">We have received your message and will get back to you shortly.</p>
                 </div>
             </div>
         </section>
@@ -576,18 +576,19 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="" class="contact-form">
+                        <form action="" class="contact-form" id="brochureForm">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="fullname" class="form-label">FULL Name*</label>
-                                        <input type="text" class="form-control" id="fullname" placeholder="">
+                                        <input type="text" class="form-control" id="fullname" placeholder="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="phonenumber" class="form-label">PHONE NUMBER*</label>
-                                        <input type="text" class="form-control" id="phonenumber" placeholder="">
+                                        <input type="text" class="form-control" id="phonenumber" placeholder=""
+                                            required>
                                     </div>
                                 </div>
                             </div>
@@ -595,19 +596,19 @@
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email Address*</label>
-                                        <input type="email" class="form-control" id="email" placeholder="">
+                                        <input type="email" class="form-control" id="email" placeholder="" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-3">
                                         <label for="enquiry" class="form-label">TYPE OF ENQUIRY</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected> Select</option>
-                                            <option value="1">Sales</option>
-                                            <option value="2">Customer Care</option>
-                                            <option value="3">Press & Media</option>
-                                            <option value="4">Invester relations</option>
-                                            <option value="5">Agent relations</option>
+                                        <select class="form-select" id="enquiry">
+                                            <option selected>Select</option>
+                                            <option value="Sales">Sales</option>
+                                            <option value="Customer Care">Customer Care</option>
+                                            <option value="Press & Media">Press & Media</option>
+                                            <option value="Investor Relations">Investor Relations</option>
+                                            <option value="Agent Relations">Agent Relations</option>
                                         </select>
                                     </div>
                                 </div>
@@ -623,16 +624,40 @@
                             <p>*Required fields</p>
                             <div class="row">
                                 <div class="col-md-12" style="text-align: right;">
-                                    <button class="btn-amber" type="submit" data-bs-target="#thanYouModal"
-                                        data-bs-toggle="modal" data-bs-dismiss="modal">Download Brochure</button>
+                                    <button class="btn-amber" type="submit">Download Brochure</button>
                                 </div>
                             </div>
                         </form>
+                        <!-- Thank You Modal -->
+                        <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="exampleModalToggleLabel2"></h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="thanks-box">
+                                            <div class="left">
+                                                <h1 class="heading">Thank You</h1>
+                                                <p class="label pt-2 pb-3">for submitting your interest</p>
+                                                <p class="ready">Your file is ready to do download</p>
+                                            </div>
+                                            <div class="right">
+                                                <img src="/assets/images/thanks-bg.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="thanYouModal" aria-hidden="true" aria-labelledby="thanYouModal" tabindex="-1">
+        <!-- <div class="modal fade" id="thanYouModal" aria-hidden="true" aria-labelledby="thanYouModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -653,7 +678,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Specification Modal -->
         <div class="modal fade" id="specificationModal" aria-hidden="true" aria-labelledby="specificationModal"
             tabindex="-1">
