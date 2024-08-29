@@ -695,8 +695,28 @@ p.label {
     .bg {
         background-image: url(/assets/images/location-bg.webp);
         background-size: contain;
-        background-position: left;
+        background-position: 0px center;
         background-repeat: no-repeat;
         height: 1100px;
+        transition: background-position 1s ease-in-out;
+
+        .info {
+            background-image: url(/assets/images/loc-bg.webp);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 80px;
+            padding-right: 80px;
+            text-align: center;
+        }
+    }
+
+    &:hover {
+        .bg {
+            background-position: -100px center;
+        }
     }
 }
