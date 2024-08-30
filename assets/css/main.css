@@ -830,85 +830,40 @@ p.label {
   z-index: 1000;
 }
 
-#plan1 .slick-prev,
-#plan2 .slick-prev,
-#plan3 .slick-prev,
-#plan4 .slick-prev,
-#plan5 .slick-prev,
-#plan6 .slick-prev {
+.floorPlans .slick-prev {
   width: 30px;
   z-index: 10;
   left: 0;
 }
-#plan1 .slick-prev:before,
-#plan2 .slick-prev:before,
-#plan3 .slick-prev:before,
-#plan4 .slick-prev:before,
-#plan5 .slick-prev:before,
-#plan6 .slick-prev:before {
+.floorPlans .slick-prev:before {
   content: url(/assets/images/prev.png);
 }
-#plan1 .slick-next,
-#plan2 .slick-next,
-#plan3 .slick-next,
-#plan4 .slick-next,
-#plan5 .slick-next,
-#plan6 .slick-next {
+.floorPlans .slick-next {
   width: 30px;
   z-index: 10;
   right: 0;
 }
-#plan1 .slick-next:before,
-#plan2 .slick-next:before,
-#plan3 .slick-next:before,
-#plan4 .slick-next:before,
-#plan5 .slick-next:before,
-#plan6 .slick-next:before {
+.floorPlans .slick-next:before {
   content: url(/assets/images/next.png);
 }
-#plan1 .modal-dialog,
-#plan2 .modal-dialog,
-#plan3 .modal-dialog,
-#plan4 .modal-dialog,
-#plan5 .modal-dialog,
-#plan6 .modal-dialog {
+.floorPlans .modal-dialog {
   max-width: 1400px;
 }
-#plan1 .modal-dialog .modal-content .modal-body,
-#plan2 .modal-dialog .modal-content .modal-body,
-#plan3 .modal-dialog .modal-content .modal-body,
-#plan4 .modal-dialog .modal-content .modal-body,
-#plan5 .modal-dialog .modal-content .modal-body,
-#plan6 .modal-dialog .modal-content .modal-body {
+.floorPlans .modal-dialog .modal-content .modal-body {
   padding: 0;
 }
-#plan1 .modal-dialog .modal-content .modal-body .btn-close,
-#plan2 .modal-dialog .modal-content .modal-body .btn-close,
-#plan3 .modal-dialog .modal-content .modal-body .btn-close,
-#plan4 .modal-dialog .modal-content .modal-body .btn-close,
-#plan5 .modal-dialog .modal-content .modal-body .btn-close,
-#plan6 .modal-dialog .modal-content .modal-body .btn-close {
+.floorPlans .modal-dialog .modal-content .modal-body .btn-close {
   position: absolute;
   top: 15px;
   right: 15px;
   opacity: 1;
   z-index: 100;
 }
-#plan1 .modal-dialog .modal-content .modal-body .plan-content,
-#plan2 .modal-dialog .modal-content .modal-body .plan-content,
-#plan3 .modal-dialog .modal-content .modal-body .plan-content,
-#plan4 .modal-dialog .modal-content .modal-body .plan-content,
-#plan5 .modal-dialog .modal-content .modal-body .plan-content,
-#plan6 .modal-dialog .modal-content .modal-body .plan-content {
+.floorPlans .modal-dialog .modal-content .modal-body .plan-content {
   display: flex;
   align-items: center;
 }
-#plan1 .modal-dialog .modal-content .modal-body .plan-content .left,
-#plan2 .modal-dialog .modal-content .modal-body .plan-content .left,
-#plan3 .modal-dialog .modal-content .modal-body .plan-content .left,
-#plan4 .modal-dialog .modal-content .modal-body .plan-content .left,
-#plan5 .modal-dialog .modal-content .modal-body .plan-content .left,
-#plan6 .modal-dialog .modal-content .modal-body .plan-content .left {
+.floorPlans .modal-dialog .modal-content .modal-body .plan-content .left {
   background: rgba(192, 120, 65, 0.1019607843);
   padding-left: 30px;
   padding-right: 30px;
@@ -918,36 +873,21 @@ p.label {
   display: flex;
   align-items: center;
 }
-#plan1 .modal-dialog .modal-content .modal-body .plan-content .left h2,
-#plan2 .modal-dialog .modal-content .modal-body .plan-content .left h2,
-#plan3 .modal-dialog .modal-content .modal-body .plan-content .left h2,
-#plan4 .modal-dialog .modal-content .modal-body .plan-content .left h2,
-#plan5 .modal-dialog .modal-content .modal-body .plan-content .left h2,
-#plan6 .modal-dialog .modal-content .modal-body .plan-content .left h2 {
+.floorPlans .modal-dialog .modal-content .modal-body .plan-content .left h2 {
   font-size: 32px;
   line-height: 40px;
   color: #040100;
   letter-spacing: 2px;
   font-weight: 400;
 }
-#plan1 .modal-dialog .modal-content .modal-body .plan-content .left h5,
-#plan2 .modal-dialog .modal-content .modal-body .plan-content .left h5,
-#plan3 .modal-dialog .modal-content .modal-body .plan-content .left h5,
-#plan4 .modal-dialog .modal-content .modal-body .plan-content .left h5,
-#plan5 .modal-dialog .modal-content .modal-body .plan-content .left h5,
-#plan6 .modal-dialog .modal-content .modal-body .plan-content .left h5 {
+.floorPlans .modal-dialog .modal-content .modal-body .plan-content .left h5 {
   font-size: 16px;
   line-height: 28px;
   color: #040100;
   letter-spacing: 2px;
   font-weight: 400;
 }
-#plan1 .modal-dialog .modal-content .modal-body .plan-content .left h3,
-#plan2 .modal-dialog .modal-content .modal-body .plan-content .left h3,
-#plan3 .modal-dialog .modal-content .modal-body .plan-content .left h3,
-#plan4 .modal-dialog .modal-content .modal-body .plan-content .left h3,
-#plan5 .modal-dialog .modal-content .modal-body .plan-content .left h3,
-#plan6 .modal-dialog .modal-content .modal-body .plan-content .left h3 {
+.floorPlans .modal-dialog .modal-content .modal-body .plan-content .left h3 {
   font-size: 18px;
   line-height: 22px;
   color: #C07841;
@@ -955,23 +895,13 @@ p.label {
   margin-top: 60px;
   margin-bottom: 60px;
 }
-#plan1 .modal-dialog .modal-content .modal-body .plan-content .left p,
-#plan2 .modal-dialog .modal-content .modal-body .plan-content .left p,
-#plan3 .modal-dialog .modal-content .modal-body .plan-content .left p,
-#plan4 .modal-dialog .modal-content .modal-body .plan-content .left p,
-#plan5 .modal-dialog .modal-content .modal-body .plan-content .left p,
-#plan6 .modal-dialog .modal-content .modal-body .plan-content .left p {
+.floorPlans .modal-dialog .modal-content .modal-body .plan-content .left p {
   font-size: 18px;
   line-height: 22px;
   color: #040100;
   font-weight: 300;
 }
-#plan1 .modal-dialog .modal-content .modal-body .plan-content .right,
-#plan2 .modal-dialog .modal-content .modal-body .plan-content .right,
-#plan3 .modal-dialog .modal-content .modal-body .plan-content .right,
-#plan4 .modal-dialog .modal-content .modal-body .plan-content .right,
-#plan5 .modal-dialog .modal-content .modal-body .plan-content .right,
-#plan6 .modal-dialog .modal-content .modal-body .plan-content .right {
+.floorPlans .modal-dialog .modal-content .modal-body .plan-content .right {
   width: 70%;
 }
 
@@ -1141,5 +1071,27 @@ p.label {
   .footer .bottom {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .floorPlans .modal-dialog .modal-content .modal-body .plan-content {
+    flex-wrap: wrap;
+  }
+  .floorPlans .modal-dialog .modal-content .modal-body .plan-content .left {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+  .floorPlans .modal-dialog .modal-content .modal-body .plan-content .left h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .floorPlans .modal-dialog .modal-content .modal-body .plan-content .left h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .floorPlans .modal-dialog .modal-content .modal-body .plan-content .left p {
+    font-weight: 14px;
+  }
+  .floorPlans .modal-dialog .modal-content .modal-body .plan-content .right {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
