@@ -1052,6 +1052,13 @@ p.label {
   .style .style-images {
     padding-left: 0;
   }
+  .suites .suites-info {
+    position: unset;
+    left: 0;
+    top: 0;
+    transform: unset;
+    width: auto;
+  }
   .lifestyle {
     height: 500px;
   }
