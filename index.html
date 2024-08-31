@@ -25,7 +25,7 @@
 
 <body>
     <div class="main-wrapper">
-        <section class="banner">
+        <section class="banner full-banner">
             <div class="left"></div>
             <div class="middle">
                 <div class="logo">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="discover">
                     <div>
-                        <a href="#">Discover <br /><img src="/assets/images/discover.png" alt=""></a>
+                        <a href="#project">Discover <br /><img src="/assets/images/discover.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -166,7 +166,7 @@
             <div class="container">
                 <h1 class="heading black pb-4">Elegant homes featuring bespoke design and prime <br /> locations,
                     crafted with the highest standards in mind.</h1>
-                <button class="btn-amber" data-bs-target="#downloadBrochure" data-bs-toggle="modal">Download
+                <button class="btn-amber1" data-bs-target="#downloadBrochure" data-bs-toggle="modal">Download
                     Brochure</button>
             </div>
         </section>
@@ -254,7 +254,7 @@
                                         comfort and reflect your taste for the finer things, ensuring your home is not
                                         just a residence but a reflection of luxury living</p>
                                     <button class="btn-amber" data-bs-target="#specificationModal"
-                                        data-bs-toggle="modal">Discover More </button>
+                                        data-bs-toggle="modal">Check Specifications </button>
                                 </div>
                             </div>
                         </div>
@@ -306,7 +306,7 @@
         </section>
         <!-- Start Plans -->
         <section class="plans" id="floorplans">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="plan-item" data-bs-target="#plan1" data-bs-toggle="modal">
@@ -343,7 +343,7 @@
         </section>
         <!-- Start Locations -->
         <section class="location" id="location">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row bg">
                     <div class="col-md-7">
                     </div>
@@ -351,7 +351,7 @@
                         <div class="info">
                             <div>
                                 <p class="label">Location</p>
-                                <h1 class="heading primary">JUMEIRAH <br />Garden city</h1>
+                                <h1 class="heading primarylight">JUMEIRAH <br />Garden city</h1>
                                 <p class="para primary pt-5 pb-3">Nestled in a prime Dubai location, our residences
                                     offer proximity to the Burj Khalifa, Dubai Mall, City Walk, La Mer Beach, Museum of
                                     the Future, and the Dubai Frame. Enjoy spectacular views, contemporary luxury, and
@@ -438,6 +438,8 @@
                         </ul>
                     </div>
                     <div class="col-md-8 map-bg">
+                        <img class="zoom" data-bs-target="#map" data-bs-toggle="modal" src="/assets/images/zoom.png"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -496,7 +498,7 @@
                     <p>*Required fields</p>
                     <div class="row">
                         <div class="col-md-12" style="text-align: right;">
-                            <button class="btn-amber" type="submit">Submit</button>
+                            <button class="btn-amber1" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -624,7 +626,7 @@
                             <p>*Required fields</p>
                             <div class="row">
                                 <div class="col-md-12" style="text-align: right;">
-                                    <button class="btn-amber" type="submit">Download Brochure</button>
+                                    <button class="btn-amber1" type="submit">Download Brochure</button>
                                 </div>
                             </div>
                         </form>
@@ -657,28 +659,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="modal fade" id="thanYouModal" aria-hidden="true" aria-labelledby="thanYouModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title" id="exampleModalToggleLabel2"></h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="thanks-box">
-                            <div class="left">
-                                <h1 class="heading">Thank You</h1>
-                                <p class="label pt-2 pb-3">for submitting your interest</p>
-                                <p class="ready">Your file is ready to do download</p>
-                            </div>
-                            <div class="right">
-                                <img src="/assets/images/thanks-bg.png" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <!-- Specification Modal -->
         <div class="modal fade" id="specificationModal" aria-hidden="true" aria-labelledby="specificationModal"
             tabindex="-1">
@@ -898,6 +878,17 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Map Modal -->
+        <div class="modal fade" id="map" aria-hidden="true" aria-labelledby="specificationModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img src="/assets/images/mapmodal.webp" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
