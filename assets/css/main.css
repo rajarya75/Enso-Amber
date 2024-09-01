@@ -477,7 +477,7 @@ p.label {
 }
 
 .interiors {
-  height: 105vh;
+  height: 110vh;
   background-image: url(/assets/images/interiors.webp);
   background-size: 100%;
   background-position: center center;
@@ -757,6 +757,22 @@ p.label {
   background: rgba(90, 112, 225, 0) url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'><path fill='%23ffffff' d='M2 0L0 2h4zm0 5L0 3h4z'/></svg>") right 0.75rem center/8px 10px no-repeat !important;
 }
 
+.policy {
+  background-color: #FEFAEE;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.policy .privacy-para h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.policy .privacy-para p,
+.policy .privacy-para ul li {
+  font-size: 16px;
+  padding: 5px 0;
+}
+
 .footer {
   background-color: #FEFAEE;
 }
@@ -775,7 +791,7 @@ p.label {
 .footer .top .box2 .social {
   display: flex;
   gap: 12px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .footer .top .box3 a {
   text-decoration: none;
@@ -801,8 +817,8 @@ p.label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .footer .bottom p {
   font-size: 14px;
