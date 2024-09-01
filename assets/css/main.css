@@ -1061,6 +1061,9 @@ p.label {
   }
   .banner .middle .logo {
     background: #FEFAEE;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
   }
   .banner .middle .logo img {
     width: 250px;
@@ -1081,7 +1084,7 @@ p.label {
   }
   .banner .right {
     width: 70%;
-    position: absolute !important;
+    position: fixed !important;
     right: 0;
     height: 100%;
     z-index: 10;

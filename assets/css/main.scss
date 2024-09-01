@@ -1298,6 +1298,9 @@ p.label {
 
             .logo {
                 background: $primaryLight;
+                position: fixed;
+                width: 100%;
+                z-index: 10;
 
                 img {
                     width: 250px;
@@ -1327,7 +1330,7 @@ p.label {
 
         .right {
             width: 70%;
-            position: absolute !important;
+            position: fixed !important;
             right: 0;
             height: 100%;
             z-index: 10;
