@@ -626,8 +626,8 @@ p.label {
 
 // Start Gallery   
 .gallery {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 70px;
     background-image: url(/assets/images/amber-bg.webp);
     background-position: center;
     background-size: cover;
@@ -635,14 +635,14 @@ p.label {
     .container {
         width: 1200px;
         margin: 0 auto;
-        max-width: 90%;
+        max-width: 80%;
     }
 
     .slick-list {
-        padding-top: 10% !important;
-        padding-bottom: 10% !important;
-        padding-left: 15% !important;
-        padding-right: 15% !important;
+        padding-top: 8% !important;
+        padding-bottom: 8% !important;
+        padding-left: 20% !important;
+        padding-right: 20% !important;
     }
 
     .slick-dots {
@@ -650,14 +650,16 @@ p.label {
 
 
         li {
-            background: #FEFAEE;
+            background: #fefaee7c;
             border-radius: 50%;
-            width: 14px;
-            height: 14px;
-            margin: 0 10px;
+            width: 12px;
+            height: 12px;
+            margin: 0 8px;
 
             &.slick-active {
                 background-color: #C07841;
+                width: 13px;
+                height: 13px;
             }
         }
     }
@@ -696,31 +698,30 @@ p.label {
 
     .slick-snext {
         opacity: 1;
-        transform: translate3d(20%, 0, 0px);
+        transform: translate3d(30%, 0, 0px);
         z-index: 1;
     }
 
     .slick-sprev {
         opacity: 1;
-        transform: translate3d(-20%, 0, 0px);
+        transform: translate3d(-30%, 0, 0px);
     }
 
     .slick-arrow {
-        width: 20px;
+        width: 12px;
         z-index: 10;
         cursor: pointer;
 
         &.prev {
             position: absolute;
-            bottom: -28px;
-            left: 35%;
+            bottom: -22px;
+            left: 40%;
         }
 
         &.next {
             position: absolute;
-            bottom: -28px;
-            right: 35%;
-            transform: rotate(180deg);
+            bottom: -22px;
+            right: 40%;
         }
     }
 
