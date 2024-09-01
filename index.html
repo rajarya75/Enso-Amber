@@ -562,6 +562,18 @@
                     </div>
                 </div>
                 <div class="bottom">
+                    <div class="box1 mobile mb-3">
+                        <img src="assets/images/amber-logo.png" width="200" style="margin-left: -22px;" alt="">
+                        <div>
+                            <a href="https://www.enso.inc/" target="_blank">A project by <img
+                                    src="/assets/images/enso.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="box4 mobile mb-2 pb-2">
+                        <div class="mb-2"><a href="privacy-policy.html">Privacy Policy</a></div>
+                        <div> <a href="terms.html"> Terms & Conditions</a>
+                        </div>
+                    </div>
                     <p class="para black">© 2024 Enso Development LLC. All Rights Reserved.</p>
                     <p class="para">Designed And Developed By : <a href="https://modtraa.com/" target="_blank"><img
                                 src="/assets/images/modtraa.png" alt=""> Modtraa</a></p>
@@ -906,6 +918,15 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                ]
             });
 
             $('.amenities-slider').slick({

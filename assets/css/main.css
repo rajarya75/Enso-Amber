@@ -21,6 +21,10 @@ body {
   overflow: hidden;
 }
 
+.mobile {
+  display: none;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 0px;
@@ -1033,20 +1037,20 @@ p.label {
 /*===== Custom Modal Animation =======*/
 @media (max-width: 768px) {
   .heading {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .para {
-    font-size: 12px;
-    line-height: 18px;
-  }
-  p.label {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
   }
   .btn-amber {
     font-size: 12px;
     padding: 10px 40px;
+  }
+  .mobile {
+    display: block;
   }
   .banner {
     height: 100vh;
@@ -1054,18 +1058,44 @@ p.label {
   .banner .middle {
     width: 100%;
   }
+  .banner .middle .logo {
+    background: #FEFAEE;
+  }
   .banner .middle .logo img {
     width: 250px;
+  }
+  .banner .middle .content {
+    padding-top: 15vh !important;
+    width: 230px;
+    margin: 0 auto;
+  }
+  .banner .middle .discover {
+    display: none;
   }
   .banner .left {
     width: 0;
   }
   .banner .right {
-    width: 0;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+  }
+  .banner .right .humbergure {
+    right: 0% !important;
+    top: 9px !important;
   }
   .project {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .project br {
+    display: none;
+  }
+  .project .frame {
+    background-size: 330px;
+    background-position: center;
   }
   .project .row .text-center {
     padding-right: 0;
@@ -1077,58 +1107,110 @@ p.label {
     height: 300px;
     margin-top: 20px;
   }
+  .project .vector {
+    bottom: -130px;
+    right: -5px;
+    width: 120px;
+  }
+  .style {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .style .left-bg {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 15px;
   }
   .style .style-images {
     padding-left: 0;
   }
+  .suites {
+    padding-top: 360px;
+  }
   .suites .suites-info {
-    position: unset;
     left: 0;
     top: 0;
     transform: unset;
     width: auto;
+    padding: 40px 15px;
+    box-shadow: none;
+  }
+  .download {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .lifestyle {
-    height: 500px;
+    flex-wrap: wrap;
+    height: auto;
   }
   .lifestyle .middle {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
+  .lifestyle .middle .content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .lifestyle .left,
   .lifestyle .right {
-    width: 0;
-  }
-  .lifestyle:hover .middle {
     width: 100%;
+    height: 250px;
+  }
+  .lifestyle:hover .middle,
+  .lifestyle:hover .left,
+  .lifestyle:hover .right {
+    width: 100%;
+  }
+  .lifestyle .py-5 {
+    padding-top: 2rem !important;
   }
   .amenities {
     padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  .amenities br {
+    display: none;
   }
   .amenities .info {
     margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .amenities .specification {
-    padding-top: 60px;
+    padding-top: 40px;
+  }
+  .amenities .specification .row {
+    flex-direction: column-reverse;
+  }
+  .amenities .specification .s-img {
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .amenities .specification .s-info {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  .amenities .pb-5 {
+    padding-bottom: 2rem !important;
   }
   .interiors {
-    height: auto;
+    background-position: top center;
     margin-bottom: 0;
   }
   .interiors .i-info {
     transform: unset;
-    position: unset;
+    top: 185px;
+    left: 0;
+    padding: 40px 15px;
   }
   .gallery {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .gallery .container {
+    max-width: 100%;
+  }
+  .gallery .slick-list {
+    padding-bottom: 12% !important;
   }
   .gallery .slick-arrow.prev {
     left: 10%;
@@ -1136,18 +1218,99 @@ p.label {
   .gallery .slick-arrow.next {
     right: 10%;
   }
+  .plans {
+    padding: 40px 0;
+  }
+  .plans .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .location {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
   .location .bg {
     background-position: top center;
+    height: auto;
+  }
+  .location .bg .info {
+    height: auto;
+    padding: 40px 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 410px;
   }
   .location:hover .bg {
     background-position: top center;
   }
+  .comfort {
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: none;
+    height: 545px;
+  }
+  .comfort .confort-info {
+    position: unset;
+    transform: unset;
+    padding: 40px 15px;
+  }
+  .comfort:hover {
+    background-position: bottom;
+  }
+  .distination {
+    padding: 40px 15px;
+  }
+  .distination .heading {
+    text-align: left !important;
+  }
+  .distination .mb-5 {
+    margin-bottom: 2rem !important;
+  }
   .distination ul {
-    padding-left: 15px;
+    padding-left: 0;
     padding-top: 0;
+  }
+  .distination .map-bg {
+    height: 250px;
+    background-repeat: no-repeat;
+  }
+  .distination .map-bg .zoom {
+    bottom: unset;
+    top: 20px;
+  }
+  .contact {
+    padding-top: 40px;
+    padding-bottom: 1px;
+  }
+  .contact-form {
+    width: 98%;
   }
   .footer .top {
     flex-wrap: wrap;
+    background-image: url(/assets/images/amber-bg.webp);
+    background-size: cover;
+    background-position: center;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-bottom: 70px;
+    padding-top: 0;
+    position: relative;
+  }
+  .footer .top p.para,
+  .footer .top a {
+    color: #FEFAEE;
+  }
+  .footer .top .box1,
+  .footer .top .box4 {
+    display: none;
+  }
+  .footer .top .box2 .social {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
   }
   .footer .top .box1,
   .footer .top .box2,
@@ -1172,7 +1335,15 @@ p.label {
   }
   .footer .bottom {
     flex-wrap: wrap;
-    justify-content: center;
+  }
+  .footer .bottom .box1 {
+    width: 100%;
+  }
+  .footer .bottom .box4 {
+    width: 100%;
+  }
+  .footer .bottom a {
+    color: #7d7d7d;
   }
   .floorPlans .modal-dialog .modal-content .modal-body .plan-content {
     flex-wrap: wrap;

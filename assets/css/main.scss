@@ -27,6 +27,10 @@ body {
     overflow: hidden;
 }
 
+.mobile {
+    display: none;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 0px;
@@ -1266,23 +1270,23 @@ p.label {
 // Responsiveness
 @media(max-width: 768px) {
     .heading {
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 22px;
+        line-height: 28px;
     }
 
     .para {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    p.label {
-        font-size: 10px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
     }
 
     .btn-amber {
         font-size: 12px;
         padding: 10px 40px;
+    }
+
+    .mobile {
+        display: block;
     }
 
     .banner {
@@ -1292,9 +1296,21 @@ p.label {
             width: 100%;
 
             .logo {
+                background: $primaryLight;
+
                 img {
                     width: 250px;
                 }
+            }
+
+            .content {
+                padding-top: 15vh !important;
+                width: 230px;
+                margin: 0 auto;
+            }
+
+            .discover {
+                display: none;
             }
         }
 
@@ -1303,13 +1319,31 @@ p.label {
         }
 
         .right {
-            width: 0;
+            width: 70%;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            z-index: 10;
+
+            .humbergure {
+                right: 0% !important;
+                top: 9px !important;
+            }
         }
     }
 
     .project {
         padding-top: 60px;
         padding-bottom: 60px;
+
+        br {
+            display: none;
+        }
+
+        .frame {
+            background-size: 330px;
+            background-position: center;
+        }
 
         .row .text-center {
             padding-right: 0;
@@ -1323,12 +1357,20 @@ p.label {
                 margin-top: 20px;
             }
         }
+
+        .vector {
+            bottom: -130px;
+            right: -5px;
+            width: 120px;
+        }
     }
 
     .style {
+        padding-top: 0;
+        padding-bottom: 0;
+
         .left-bg {
-            padding-top: 60px;
-            padding-bottom: 60px;
+            padding: 60px 15px;
         }
 
         .style-images {
@@ -1337,63 +1379,121 @@ p.label {
     }
 
     .suites {
+        padding-top: 360px;
+
         .suites-info {
-            position: unset;
             left: 0;
             top: 0;
             transform: unset;
             width: auto;
+            padding: 40px 15px;
+            box-shadow: none;
         }
     }
 
+    .download {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     .lifestyle {
-        height: 500px;
+        flex-wrap: wrap;
+        height: auto;
 
         .middle {
             width: 100%;
             padding-left: 15px;
             padding-right: 15px;
+
+            .content {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
         }
 
         .left,
         .right {
-            width: 0;
+            width: 100%;
+            height: 250px;
         }
 
-        &:hover .middle {
-            width: 100%;
+        &:hover {
+
+            .middle,
+            .left,
+            .right {
+                width: 100%;
+            }
+        }
+
+        .py-5 {
+            padding-top: 2rem !important;
         }
     }
 
     .amenities {
         padding-bottom: 20px;
+        padding-top: 30px;
+
+        br {
+            display: none;
+        }
 
         .info {
             margin-bottom: 40px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
 
         .specification {
-            padding-top: 60px;
+            .row {
+                flex-direction: column-reverse;
+            }
+
+            padding-top: 40px;
+
+            .s-img {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
 
             .s-info {
-                margin-bottom: 50px;
+                margin-bottom: 20px;
+                padding-top: 40px;
             }
+        }
+
+        .pb-5 {
+            padding-bottom: 2rem !important;
         }
     }
 
     .interiors {
-        height: auto;
+        background-position: top center;
         margin-bottom: 0;
+
 
         .i-info {
             transform: unset;
-            position: unset;
+            top: 185px;
+            left: 0;
+            padding: 40px 15px;
         }
     }
 
     .gallery {
+
+
         padding-top: 60px;
         padding-bottom: 60px;
+
+        .container {
+            max-width: 100%;
+        }
+
+        .slick-list {
+            padding-bottom: 12% !important;
+        }
 
         .slick-arrow.prev {
             left: 10%;
@@ -1404,9 +1504,32 @@ p.label {
         }
     }
 
+    .plans {
+        padding: 40px 0;
+
+        .col-md-4 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
     .location {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+
         .bg {
             background-position: top center;
+            height: auto;
+
+            .info {
+                height: auto;
+                padding: 40px 15px;
+                margin-left: -15px;
+                margin-right: -15px;
+                margin-top: 410px;
+            }
+
         }
 
         &:hover {
@@ -1416,16 +1539,91 @@ p.label {
         }
     }
 
+    .comfort {
+        background-position: bottom center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: none;
+        height: 545px;
+        ;
+
+        .confort-info {
+            position: unset;
+            transform: unset;
+            padding: 40px 15px;
+        }
+
+        &:hover {
+            background-position: bottom;
+        }
+    }
+
     .distination {
+        padding: 40px 15px;
+
+        .heading {
+            text-align: left !important;
+        }
+
+        .mb-5 {
+            margin-bottom: 2rem !important;
+        }
+
         ul {
-            padding-left: 15px;
+            padding-left: 0;
             padding-top: 0;
         }
+
+        .map-bg {
+            height: 250px;
+            background-repeat: no-repeat;
+
+            .zoom {
+                bottom: unset;
+                top: 20px;
+            }
+        }
+    }
+
+    .contact {
+        padding-top: 40px;
+        padding-bottom: 1px;
+    }
+
+    .contact-form {
+        width: 98%;
     }
 
     .footer {
         .top {
             flex-wrap: wrap;
+            background-image: url(/assets/images/amber-bg.webp);
+            background-size: cover;
+            background-position: center;
+            margin-left: -15px;
+            margin-right: -15px;
+            padding-left: 15px;
+            padding-bottom: 70px;
+            padding-top: 0;
+            position: relative;
+
+            p.para,
+            a {
+                color: $primaryLight;
+            }
+
+            .box1,
+            .box4 {
+                display: none;
+            }
+
+            .box2 {
+                .social {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 15px;
+                }
+            }
 
             .box1,
             .box2,
@@ -1456,7 +1654,18 @@ p.label {
 
         .bottom {
             flex-wrap: wrap;
-            justify-content: center;
+
+            .box1 {
+                width: 100%;
+            }
+
+            .box4 {
+                width: 100%;
+            }
+
+            a {
+                color: #7d7d7d;
+            }
         }
     }
 
