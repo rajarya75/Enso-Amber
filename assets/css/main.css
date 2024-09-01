@@ -1076,8 +1076,19 @@ p.label {
   .banner .left {
     width: 0;
   }
-  .banner .right {
+  .banner.full-banner .right {
     width: 0;
+  }
+  .banner .right {
+    width: 70%;
+    position: fixed !important;
+    right: 0;
+    height: 100%;
+    z-index: 10;
+  }
+  .banner .right .humbergure {
+    right: 10px !important;
+    top: 9px !important;
   }
   .project {
     padding-top: 60px;
