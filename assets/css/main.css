@@ -13,6 +13,7 @@ html {
 
 body {
   font-family: "Source Sans 3", sans-serif;
+  overflow-x: hidden;
 }
 
 .main-wrapper {
@@ -1056,7 +1057,7 @@ p.label {
     height: 100vh;
   }
   .banner .middle {
-    width: 100%;
+    min-width: 100% !important;
   }
   .banner .middle .logo {
     background: #FEFAEE;
@@ -1077,7 +1078,7 @@ p.label {
   }
   .banner .right {
     width: 70%;
-    position: absolute;
+    position: absolute !important;
     right: 0;
     height: 100%;
     z-index: 10;

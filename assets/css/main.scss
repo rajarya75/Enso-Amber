@@ -1294,7 +1294,7 @@ p.label {
         height: 100vh;
 
         .middle {
-            width: 100%;
+            min-width: 100% !important;
 
             .logo {
                 background: $primaryLight;
@@ -1321,7 +1321,7 @@ p.label {
 
         .right {
             width: 70%;
-            position: absolute;
+            position: absolute !important;
             right: 0;
             height: 100%;
             z-index: 10;
