@@ -821,7 +821,7 @@
             </div>
         </div>
         <!-- Plan5 Modal -->
-        <div class="modal fad floorPlanse" id="plan5" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
+        <div class="modal fad floorPlans" id="plan5" aria-hidden="true" aria-labelledby="plan1" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -909,12 +909,13 @@
             });
 
             $('.amenities-slider').slick({
-                // infinite: false,
                 centerMode: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 5000,
+                prevArrow: '<img src="/assets/images/a-left.webp" class="prev">',
+                nextArrow: '<img src="/assets/images/a-right.webp" class="next">',
                 responsive: [
                     {
                         breakpoint: 768,
@@ -1008,7 +1009,6 @@
 
             rev.slick({
                 speed: 300,
-                arrows: true,
                 dots: true,
                 focusOnSelect: true,
                 prevArrow: '<img src="/assets/images/left-light.png" class="prev">',

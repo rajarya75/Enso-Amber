@@ -27,6 +27,26 @@ body {
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+    padding: 05px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $primaryLight;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C07841;
+    border: solid 1px $primaryLight;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $primaryLight;
+}
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1400px;
@@ -546,30 +566,24 @@ p.label {
         margin-left: 10px;
     }
 
-    .slick-prev {
-        background: #fefaeeac !important;
-        height: 100%;
-        width: 40px;
+    .slick-arrow {
+        position: absolute;
+        top: 0;
         z-index: 10;
-        left: 0;
 
-        &:before {
-            content: url(/assets/images/prev.png);
+        &.prev {
+            left: -30px;
+            height: 100%;
+            cursor: pointer;
+
+        }
+
+        &.next {
+            right: -30px;
+            height: 100%;
+            cursor: pointer;
         }
     }
-
-    .slick-next {
-        background: #fefaeeac !important;
-        height: 100%;
-        width: 40px;
-        z-index: 10;
-        right: 0;
-
-        &:before {
-            content: url(/assets/images/next.png);
-        }
-    }
-
 
     .info {
         text-align: center;
@@ -1230,12 +1244,10 @@ p.label {
 .modal.fade .modal-dialog {
     transition: transform 0.5s ease-out;
     transform: translateY(-100%);
-    /* Start the modal off-screen (above the view) */
 }
 
 .modal.fade.show .modal-dialog {
     transform: translateY(0);
-    /* Slide the modal into view */
 }
 
 .modal.fade .modal-dialog {
