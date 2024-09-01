@@ -14,7 +14,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     contactNumber: phoneNumber,
     message: message,
     typeOfEnquiry: enquiryType,
-    from: "Contact Us",
+    from: "Enso Amber",
   };
 
   fetch("https://betaapi.enso.inc/api/website/enquiry", {
@@ -50,7 +50,7 @@ document
       contactNumber: document.getElementById("phonenumber").value,
       message: document.getElementById("message").value,
       typeOfEnquiry: document.getElementById("enquiry").value,
-      from: "Contact Us",
+      from: "Enso Amber",
     };
 
     // Send data to API
