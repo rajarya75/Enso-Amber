@@ -104,23 +104,11 @@ p.label {
     color: #C07841;
     background: $primaryLight;
     display: inline-block;
-    transition: all .3s;
+    transition: all .2s;
     position: relative;
     overflow: hidden;
     z-index: 1;
     text-decoration: none;
-
-
-    &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 27px 0 27px 0;
-        z-index: -2;
-    }
 
     &:before {
         content: '';
@@ -130,13 +118,14 @@ p.label {
         width: 0%;
         height: 100%;
         background-color: #C07841;
-        transition: all .3s;
+        transition: all .5s;
         border-radius: 27px 0 27px 0;
         z-index: -1;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-in-out;
         animation-duration: 300ms;
 
     }
+
 
     &:hover {
         color: #FEFAEE;
@@ -149,6 +138,20 @@ p.label {
             path {
                 fill: $primaryLight;
             }
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            border-radius: 27px 27px 27px 0;
+            z-index: -2;
+            background-color: #c07841af;
+            animation-timing-function: ease-in-out;
+            animation-duration: 300ms;
         }
     }
 
