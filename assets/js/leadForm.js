@@ -70,7 +70,7 @@ document
           new bootstrap.Modal(document.getElementById("thankYouModal")).show();
 
           // Trigger PDF download
-          window.location.href = "/path/to/your/brochure.pdf";
+          window.location.href = "/assets/images/video/Amber_ Brochure.pdf";
         } else {
           alert("There was an issue with your submission. Please try again.");
         }

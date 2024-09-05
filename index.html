@@ -26,7 +26,7 @@
 <body>
     <!-- Video Loader -->
     <div id="loader">
-        <video class autoplay muted playsinline>
+        <video autoplay muted playsinline>
             <source src="/assets/images/video/amber_loader.mp4" type="video/mp4">
         </video>
     </div>
@@ -1056,24 +1056,46 @@
 
         </script>
         <script>
-            // Hide loader after video ends
-            const loaderVideo = document.querySelector('#loader video');
-            const loader = document.getElementById('loader');
-            const mainWrapper = document.querySelector('.main-wrapper');
+            // const loaderVideo = document.querySelector('#loader video');
+            // const loader = document.getElementById('loader');
+            // const mainWrapper = document.querySelector('.main-wrapper');
 
-            function playVideoOnInteraction() {
-                loaderVideo.play();
-            }
+            // loaderVideo.addEventListener('ended', function () {
+            //     loader.style.display = 'none';
+            //     mainWrapper.style.display = 'block';
+            // });
 
-            if (loaderVideo && loaderVideo.paused) {
-                document.body.addEventListener('touchstart', playVideoOnInteraction, { once: true });
-                document.body.addEventListener('click', playVideoOnInteraction, { once: true });
-            }
+            document.addEventListener('DOMContentLoaded', function () {
+                const loaderVideo = document.querySelector('#loader video');
+                const loader = document.getElementById('loader');
+                const mainWrapper = document.querySelector('.main-wrapper');
 
-            loaderVideo.addEventListener('ended', function () {
-                loader.style.display = 'none'; // Hide the loader
-                mainWrapper.style.display = 'block'; // Show the main content
+                // Autoplay handling for mobile devices
+                function playVideoOnInteraction() {
+                    if (loaderVideo.paused) {
+                        loaderVideo.play();
+                    }
+                }
+
+                // Trigger video play after user interaction (for mobile)
+                if (loaderVideo) {
+                    loaderVideo.muted = true; // Ensure it's muted for autoplay
+                    loaderVideo.playsInline = true; // Ensure inline playback on mobile
+
+                    // Check if the video is not playing, then listen for user interaction to start playback
+                    if (loaderVideo.paused) {
+                        document.body.addEventListener('touchstart', playVideoOnInteraction, { once: true });
+                        document.body.addEventListener('click', playVideoOnInteraction, { once: true });
+                    }
+
+                    // Event listener for video end
+                    loaderVideo.addEventListener('ended', function () {
+                        loader.style.display = 'none';
+                        mainWrapper.style.display = 'block';
+                    });
+                }
             });
+
         </script>
 </body>
 
