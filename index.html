@@ -24,6 +24,12 @@
 </head>
 
 <body>
+    <!-- Video Loader -->
+    <div id="loader">
+        <video class autoplay muted playsinline>
+            <source src="/assets/images/video/amber_loader.mp4" type="video/mp4">
+        </video>
+    </div>
     <div class="main-wrapper">
         <section class="banner full-banner">
             <div class="left"></div>
@@ -1048,6 +1054,17 @@
                 },
             });
 
+        </script>
+        <script>
+            // Hide loader after video ends
+            const loaderVideo = document.querySelector('#loader video');
+            const loader = document.getElementById('loader');
+            const mainWrapper = document.querySelector('.main-wrapper');
+
+            loaderVideo.addEventListener('ended', function () {
+                loader.style.display = 'none'; // Hide the loader
+                mainWrapper.style.display = 'block'; // Show the main content
+            });
         </script>
 </body>
 

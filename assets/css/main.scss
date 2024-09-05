@@ -1268,6 +1268,30 @@ p.label {
 
 /*===== Custom Modal Animation =======*/
 
+/* Loader video styling */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-wrapper {
+    display: none;
+}
+
 // Responsiveness
 @media(max-width: 768px) {
     .heading {
