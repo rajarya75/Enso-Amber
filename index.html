@@ -1061,6 +1061,15 @@
             const loader = document.getElementById('loader');
             const mainWrapper = document.querySelector('.main-wrapper');
 
+            function playVideoOnInteraction() {
+                loaderVideo.play();
+            }
+
+            if (loaderVideo && loaderVideo.paused) {
+                document.body.addEventListener('touchstart', playVideoOnInteraction, { once: true });
+                document.body.addEventListener('click', playVideoOnInteraction, { once: true });
+            }
+
             loaderVideo.addEventListener('ended', function () {
                 loader.style.display = 'none'; // Hide the loader
                 mainWrapper.style.display = 'block'; // Show the main content
