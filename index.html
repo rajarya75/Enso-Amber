@@ -1070,25 +1070,21 @@
                 const loader = document.getElementById('loader');
                 const mainWrapper = document.querySelector('.main-wrapper');
 
-                // Autoplay handling for mobile devices
                 function playVideoOnInteraction() {
                     if (loaderVideo.paused) {
                         loaderVideo.play();
                     }
                 }
 
-                // Trigger video play after user interaction (for mobile)
                 if (loaderVideo) {
-                    loaderVideo.muted = true; // Ensure it's muted for autoplay
-                    loaderVideo.playsInline = true; // Ensure inline playback on mobile
+                    loaderVideo.muted = true;
+                    loaderVideo.playsInline = true;
 
-                    // Check if the video is not playing, then listen for user interaction to start playback
                     if (loaderVideo.paused) {
                         document.body.addEventListener('touchstart', playVideoOnInteraction, { once: true });
                         document.body.addEventListener('click', playVideoOnInteraction, { once: true });
                     }
 
-                    // Event listener for video end
                     loaderVideo.addEventListener('ended', function () {
                         loader.style.display = 'none';
                         mainWrapper.style.display = 'block';

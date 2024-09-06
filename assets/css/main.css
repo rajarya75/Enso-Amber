@@ -1058,7 +1058,7 @@ p.label {
 }
 
 .main-wrapper {
-  display: none;
+  visibility: none;
 }
 
 @media (max-width: 768px) {
