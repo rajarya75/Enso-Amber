@@ -10,7 +10,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   const data = {
     name: fullName,
     email: email,
-    mobileCode: "+971", // Assuming this is static
+    mobileCode: "+971",
     contactNumber: phoneNumber,
     message: message,
     typeOfEnquiry: enquiryType,
@@ -43,13 +43,19 @@ document
     event.preventDefault();
 
     // Gather form data
-    const formData = {
-      name: document.getElementById("fullname").value,
-      email: document.getElementById("email").value,
-      mobileCode: "+971", // Adjust if mobile code is dynamic
-      contactNumber: document.getElementById("phonenumber").value,
-      message: document.getElementById("message").value,
-      typeOfEnquiry: document.getElementById("enquiry").value,
+    const fullName = document.getElementById("fullname").value;
+    const phoneNumber = document.getElementById("phonenumber").value;
+    const email = document.getElementById("email").value;
+    const enquiryType = document.getElementById("enquiry").value;
+    const message = document.getElementById("message").value;
+
+    const data = {
+      name: fullName,
+      email: email,
+      mobileCode: "+971",
+      contactNumber: phoneNumber,
+      message: message,
+      typeOfEnquiry: enquiryType,
       from: "Enso Amber",
     };
 
@@ -59,7 +65,7 @@ document
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(data),
     })
       .then((response) => response.json())
       .then((data) => {
