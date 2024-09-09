@@ -51,6 +51,11 @@ body {
     max-width: 1400px;
   }
 }
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+  }
+}
 .text-center {
   text-align: center;
 }
@@ -1133,6 +1138,9 @@ p.label {
     font-size: 22px;
     line-height: 28px;
   }
+  .desktop {
+    display: none;
+  }
   .para {
     font-size: 16px;
     line-height: 24px;
@@ -1147,6 +1155,7 @@ p.label {
   }
   .banner {
     height: 100vh;
+    background-image: url(/assets/images/banner-res.webp);
   }
   .banner .middle {
     min-width: 100% !important;
@@ -1248,6 +1257,9 @@ p.label {
   .lifestyle .middle .content {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .lifestyle .left {
+    background-image: url(/assets/images/luxury-left-res.webp);
   }
   .lifestyle .left,
   .lifestyle .right {

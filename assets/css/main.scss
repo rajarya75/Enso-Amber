@@ -52,9 +52,16 @@ body {
     background: $primaryLight;
 }
 
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1400px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
     }
 }
 
@@ -1380,6 +1387,10 @@ p.label {
         line-height: 28px;
     }
 
+    .desktop {
+        display: none;
+    }
+
     .para {
         font-size: 16px;
         line-height: 24px;
@@ -1397,6 +1408,7 @@ p.label {
 
     .banner {
         height: 100vh;
+        background-image: url(/assets/images/banner-res.webp);
 
         .middle {
             min-width: 100% !important;
@@ -1524,6 +1536,10 @@ p.label {
                 padding-top: 40px;
                 padding-bottom: 40px;
             }
+        }
+
+        .left {
+            background-image: url(/assets/images/luxury-left-res.webp);
         }
 
         .left,
