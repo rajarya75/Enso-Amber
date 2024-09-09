@@ -997,15 +997,15 @@ p.label {
   z-index: 1000;
 }
 
-#thankYouModal .thanks-box {
+.thanks-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#thankYouModal .thanks-box .heading {
+.thanks-box .heading {
   color: #ECC4B3;
 }
-#thankYouModal .thanks-box .ready {
+.thanks-box .ready {
   color: #ECC4B3;
 }
 

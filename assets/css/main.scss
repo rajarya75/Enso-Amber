@@ -1220,19 +1220,19 @@ p.label {
     }
 }
 
-#thankYouModal {
-    .thanks-box {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+// Thank you modal
 
-        .heading {
-            color: $primary;
-        }
+.thanks-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        .ready {
-            color: $primary;
-        }
+    .heading {
+        color: $primary;
+    }
+
+    .ready {
+        color: $primary;
     }
 }
 
