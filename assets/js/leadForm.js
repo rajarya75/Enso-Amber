@@ -70,7 +70,8 @@ document
           new bootstrap.Modal(document.getElementById("thankYouModal")).show();
 
           // Trigger PDF download
-          window.location.href = "/assets/images/video/Amber_ Brochure.pdf";
+          window.location.href =
+            "/assets/images/video/Enso_Amber_ Brochure.pdf";
         } else {
           alert("There was an issue with your submission. Please try again.");
         }

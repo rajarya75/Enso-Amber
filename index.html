@@ -25,16 +25,19 @@
 
 <body>
     <!-- Video Loader -->
-    <div id="loader">
+    <!-- <div id="loader">
         <video autoplay muted playsinline>
             <source src="/assets/images/video/amber_loader.mp4" type="video/mp4">
         </video>
-    </div>
+    </div> -->
     <div class="main-wrapper">
+        <div class="call">
+            <a href="tel:+97145663676"><img src="/assets/images/call.png" alt=""></a>
+        </div>
         <section class="banner full-banner">
             <div class="left"></div>
             <div class="middle">
-                <div class="logo">
+                <div class="logo mobile">
                     <a href="/"><img src="/assets/images/amber-logo.png" alt=""></a>
                 </div>
                 <div class="content">
@@ -48,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="right">
+            <div class="right mobile">
                 <button class="btn-amber btn-back">
                     <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -58,14 +61,31 @@
                 <img class="humbergure" src="assets/images/humbergure.svg" alt="">
                 <ul>
                     <li><a href="#project">Project</a></li>
-                    <li><a href="#lifestyle">Life Style</a></li>
+                    <li><a href="#lifestyle">LifeStyle</a></li>
                     <li><a href="#amenities">Amenities</a></li>
                     <li><a href="#interiors">Interiors</a></li>
                     <li><a href="#floorplans">Floorplans</a></li>
                     <li><a href="#location">Location</a></li>
+                    <li><a href="https://agent.enso.inc/" class="user" target="_blank"><img
+                                src="/assets/images/user.png" alt=""> Broker / Employee</a></li>
                 </ul>
                 <a class="btn-amber discover-more" href="#discoverMore">Discover More </a>
             </div>
+        </section>
+        <section class="desktop-header">
+            <ul>
+                <li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#lifestyle">LifeStyle</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="/"><img class="logo" src="/assets/images/amber-logo.png" alt=""></a></li>
+                <li><a href="#interiors">Interiors</a></li>
+                <li><a href="#floorplans">Floorplans</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="https://agent.enso.inc/" class="user" target="_blank"><img src="/assets/images/user.png"
+                            alt=""> Broker / Employee</a></li>
+                </li>
+            </ul>
         </section>
         <!-- Start Project -->
         <section class="project" id="project">
@@ -1047,7 +1067,7 @@
                 slidesToScroll: 1,
                 centerPadding: '0',
                 swipe: true,
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 3000,
                 customPaging: function () {
                     return '';

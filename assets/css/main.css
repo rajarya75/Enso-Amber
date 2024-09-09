@@ -178,13 +178,71 @@ p.label {
   color: #ffffff;
 }
 
+.call {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  z-index: 10000;
+}
+.call img {
+  width: 50px;
+}
+
+.desktop-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.desktop-header.sticky ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+.desktop-header ul {
+  padding-left: 200px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 0;
+  width: 100%;
+  background-color: #FEFAEE;
+  transition: all 0.3s ease;
+}
+.desktop-header ul li .logo {
+  width: 215px;
+}
+.desktop-header ul li .user {
+  border: 1px solid #010D07;
+  padding: 8px 16px;
+  border-radius: 25px 0 25px 0;
+}
+.desktop-header ul li .user img {
+  margin-top: -3px;
+  margin-right: 3px;
+}
+.desktop-header ul li a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #040100;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 340;
+}
+
 .banner {
   display: flex;
   background-image: url(/assets/images/banner.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 110vh;
+  height: calc(100vh - 50px);
 }
 .banner .left {
   width: 20%;
@@ -252,6 +310,15 @@ p.label {
   font-size: 18px;
   line-height: 40px;
   color: #040100;
+}
+.banner .right ul li .user {
+  border: 1px solid #010D07;
+  padding: 8px 16px;
+  border-radius: 30px 0 30px 0;
+}
+.banner .right ul li .user img {
+  margin-top: -3px;
+  margin-right: 3px;
 }
 .banner .right .discover-more {
   margin-left: 30px;
