@@ -69,9 +69,8 @@ document
           document.getElementById("brochureForm").style.display = "none";
           new bootstrap.Modal(document.getElementById("thankYouModal")).show();
 
-          // Trigger PDF download
-          window.location.href =
-            "/assets/images/video/Enso_Amber_ Brochure.pdf";
+          // Open PDF in new tab
+          window.open("/assets/images/video/Enso_Amber_Brochure.pdf", "_blank");
         } else {
           alert("There was an issue with your submission. Please try again.");
         }
