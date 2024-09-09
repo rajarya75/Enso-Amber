@@ -1226,6 +1226,12 @@ p.label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    .left {
+        padding-left: 50px;
+    }
 
     .heading {
         color: $primary;
