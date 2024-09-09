@@ -43,7 +43,7 @@ document
     event.preventDefault();
 
     // Gather form data
-    const fullName = document.getElementById("fullname").value;
+    const fullName = document.getElementById("fullName").value;
     const phoneNumber = document.getElementById("phonenumber").value;
     const email = document.getElementById("email").value;
     const enquiryType = document.getElementById("enquiry").value;
