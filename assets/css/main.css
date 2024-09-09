@@ -997,6 +997,18 @@ p.label {
   z-index: 1000;
 }
 
+#thankYouModal .thanks-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#thankYouModal .thanks-box .heading {
+  color: #ECC4B3;
+}
+#thankYouModal .thanks-box .ready {
+  color: #ECC4B3;
+}
+
 .floorPlans .slick-prev {
   width: 30px;
   z-index: 10;

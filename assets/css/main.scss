@@ -1220,6 +1220,22 @@ p.label {
     }
 }
 
+#thankYouModal {
+    .thanks-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .heading {
+            color: $primary;
+        }
+
+        .ready {
+            color: $primary;
+        }
+    }
+}
+
 .floorPlans {
     .slick-prev {
         width: 30px;
