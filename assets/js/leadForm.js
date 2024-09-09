@@ -43,11 +43,11 @@ document
     event.preventDefault();
 
     // Gather form data
-    const fullName = document.getElementById("fullName").value;
-    const phoneNumber = document.getElementById("phonenumber").value;
-    const email = document.getElementById("email").value;
-    const enquiryType = document.getElementById("enquiry").value;
-    const message = document.getElementById("message").value;
+    const fullName = document.getElementById("fullName1").value;
+    const phoneNumber = document.getElementById("phonenumber1").value;
+    const email = document.getElementById("email1").value;
+    const enquiryType = document.getElementById("enquiry1").value;
+    const message = document.getElementById("message1").value;
 
     const data = {
       name: fullName,
