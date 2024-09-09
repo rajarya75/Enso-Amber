@@ -69,7 +69,7 @@ document
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.success) {
+        if (data.status) {
           // Adjust based on your API response
           // Hide form and open thank you modal
           document.getElementById("brochureForm").style.display = "none";
