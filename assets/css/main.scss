@@ -20,6 +20,7 @@ html {
 body {
     font-family: "Source Sans 3", sans-serif;
     overflow-x: hidden;
+    background: #FEFAEE;
 }
 
 .main-wrapper {
@@ -234,6 +235,7 @@ p.label {
     z-index: 1000;
     position: relative;
     transition: all 0.3s ease;
+    visibility: hidden;
 
     &.sticky {
         ul {
@@ -293,7 +295,7 @@ p.label {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 50px);
+    height: 110vh;
 
     .left {
         width: 20%;
@@ -1502,8 +1504,8 @@ p.label {
             padding-left: 0px;
 
             .video-background {
-                height: 300px;
-                margin-top: 20px;
+                height: 246px;
+                margin-top: 30px;
             }
         }
 
