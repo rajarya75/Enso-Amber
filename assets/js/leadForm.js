@@ -17,7 +17,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     from: "Enso Amber",
   };
 
-  fetch("https://betaapi.enso.inc/api/website/enquiry", {
+  fetch("https://api.enso.inc/api/website/enquiry", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -60,7 +60,7 @@ document
     };
 
     // Send data to API
-    fetch("https://betaapi.enso.inc/api/website/enquiry", {
+    fetch("https://api.enso.inc/api/website/enquiry", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
